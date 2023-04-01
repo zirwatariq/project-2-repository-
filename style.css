@@ -16,7 +16,7 @@
     html{
     font-family: 'Roboto', Helvetica, sans-serif;
     font-variation-settings: "wght" 400;
-    line-height: 1.5em; /* 1.5 divided by 2 =0.75 */
+    line-height: 1.6em; 
     }
     body{
         max-width: 36rem;  
@@ -183,6 +183,9 @@ h1{
     line-height: 1.1em;
     font-size: 1.7rem;
     font-weight: 800;}
+    .title {
+        color: #FFCA29;
+    }
 .day{
     color: #330811;
     font-size: 1.4rem;
@@ -192,6 +195,11 @@ p{
     margin-bottom: 1rem;}
 .aheader {
     padding: 0.6rem;}
+.aheaderc {
+    background-color: #59314C;
+    padding: 0.6rem;
+    color: #ffffff;
+}
 
    /* heading two and second section */
 h2{
@@ -236,6 +244,11 @@ h2{
     .thirdpara {
         padding: 0.6rem;}
 
+    .work {
+        padding: 0.6rem;
+        list-style: none;
+    }    
+
 
           /* button */
     #my-button {
@@ -253,35 +266,80 @@ h2{
         cursor: pointer;}
 
          /* back to calendar */
-
+    .bac {
+        margin-top: 2rem;
+        padding: 0.6rem;}
 
         /* footer */
+    .backtop {
+        width: 15%;
+        position: absolute;
+        right: 0;
+        margin-top: -1.5rem;
+        display: block;}
     footer{
         background-color: #58304B;
         color: #ffffff;}
-        .fa {
+        footer p{
+        padding: 0.6rem;
+        margin-bottom: -2rem;
+        margin-top: -0.1rem;}
+    .social{
+        text-align: center;
+        padding: 0.5rem;
+        }
+    .fa {
             color: #ffffff;
             padding: 20px;
-            font-size: 80px;
             width: 50px;
+            width: 30px;
             text-align: center;
             text-decoration: none;
             margin: 0 auto;
             border-radius: 100px;}
-          .fa-facebook {
+    .fa-facebook {
             border: 2px solid #fff;
             border-radius: 60rem;
             padding: 2px;
             color: white;
           }
-          .fa-instagram {
+    .fa-instagram {
             border: 2px solid #fff;
             border-radius: 60rem;
             padding: 2px;
             color: white;}
+
+            /*homepage input */
+            label {
+                display: block;
+                margin-bottom: 10px;}
+              
+              input[type="text"] {
+                padding: 10px;
+                color: #330811;
+                font-size: 16px;
+                border: 2px solid #330811;
+                border-radius: 10px;
+                box-sizing: border-box;
+                width: 70%;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 10px;}
+                button {
+                    background: linear-gradient(to right, #EDC242, #D8AC27);
+                    border: none;
+                    color: #330811;
+                    padding: 10px 20px;
+                    font-size: 1.2rem;
+                    font-weight: 800;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 2rem;
+                    margin-top: 1rem;
+                  }
+            
+              
           
-/*
-    .socialicon{
-        width: 30%;
-        margin-top: 1rem;}*/
 
