@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --mainColor: #000000;
+    --purpleColor: #59314C;
+    --lightPurple: #58304B;
+    --yellowColor: #FFCF3F;
+    --orangeColor: #FF8100;
+    --pinkColor:   #F5ADB3;
+  }
+
+/* typography */
+    html{
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-variation-settings: "wght" 400;
+    line-height: 1.5em; /* 1.5 divided by 2 =0.75 */
+    }
+    body{
+        max-width: 36rem;  
+        margin: 0 auto; 
+    
+    }
+   /* skip to main button */ 
+  #skip {
+    margin: -1rem auto;
+    display: block;
+    z-index: 1001;
+    top: -1rem;
+    position: relative;
+  }
+  /* header with logo and nav bar  */
+    .tophead{
+     padding: 0.5rem;
+     border-bottom: 3px solid var(--orangeColor);
+      }
+
+      .tophead ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+      }
+      .tophead li a {
+        display: block;
+        padding: 20px 20px;
+        color: #fff;
+        text-decoration: underline ;
+        text-align: center;
+      }
+      .tophead li a:hover,
+.tophead .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.tophead .logo {
+  display: block;
+  float: left;
+  width: 50%;
+}
+/* menu */
+.tophead .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+
+  /* menu icon */
+.tophead .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    margin-top: 1.5rem;}
+
+.tophead .menu-icon .navicon {
+    background: #59314C;
+    display: block;
+    height: 4px;
+    position: relative;
+    transition: .2s ease-in;
+    width: 30px;
+  }
+.tophead .menu-icon .navicon:before,
+.tophead .menu-icon .navicon:after {
+    background: #59314C;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+.tophead .menu-icon .navicon:before {
+    top: 7px;
+  }
+.tophead .menu-icon .navicon:after {
+    top: -7px;}
+
+ /* menu btn */
+.tophead .menu-btn {
+    display: none;
+  }
+.tophead .menu-btn:checked ~ .menu {
+  max-height: 700px;
+  height:   500px;
+  background-color: var(--purpleColor);
+  }
+.tophead.menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+.tophead.menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+.tophead .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+.tophead .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.tophead.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+   /* calendar and music icon */
+.icon {
+    width: 30%;
+  }
+.primary-navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+.primary-navigation ul li ul{
+    position:absolute;
+    width: 122px;
+    background-color: #ffffff;
+   display: none;
+  }
+.primary-navigation ul li ul li {
+    width: 100%;
+    border-top: 0.1px solid var(--orangeColor);
+  }
+.primary-navigation ul li ul li a {
+    padding: 0.5rem;
+  }
+.primary-navigation ul li:focus-within > ul {
+    display: initial;
+  }
+.primary-navigation ul li:hover > ul{
+    display: initial;
+  }
+  
+   /* breadcrumbs */
+nav.breadcrumb {
+    padding: 0.8rem 1rem;}
+
+nav.breadcrumb ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;}
+  
+nav.breadcrumb li {
+    display: inline;
+    color: #59314C;
+    font-weight: 500;}
+  
+nav.breadcrumb li + li::before {
+    display: inline-block;
+    margin: 0 0.25rem;
+    transform: rotate(20deg);
+    border-right: 0.1rem solid currentcolor;
+    height: 0.8rem;
+    content: "";}
+  
+nav.breadcrumb li [aria-current="page"] {
+   font-weight: 600;}
+
+    /* heading one and paragraph */
+h1{
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #58304B;
+    line-height: 1.1em;
+    font-size: 1.7rem;
+    font-weight: 800;}
+.day{
+    color: #330811;
+    font-size: 1.4rem;
+    font-weight: 600;}
+p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;}
+.aheader {
+    padding: 0.6rem;}
+
+   /* heading two and second section */
+h2{
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #754866;
+    line-height: 1.1em;
+    font-size: 1.5rem;
+    font-weight: 800;}
+
+.secondpara {
+    padding: 0.6rem; }
+.steps{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    list-style-type: decimal;
+    margin-left: 1rem;}
+
+   /* figure and caption */
+    figure {
+        display: block;
+        margin: 0;
+        padding: 0;}
+      
+    figure img {
+        display: block;
+        max-width: 70%;
+        margin: 0 auto;
+        margin-top: -1.5rem;}
+      
+    figcaption {
+        font-size: 16px;
+        color: #330811;
+        text-align: center;}
+
+     /* heading 3 and paragraph */
+    h3{
+        font-family: 'Roboto', Helvetica, sans-serif;
+        color: #3a2333;
+        line-height: 1.1em;
+        font-size: 1.3rem;
+        font-weight: 600;}
+    .thirdpara {
+        padding: 0.6rem;}
+
+
+          /* button */
+    #my-button {
+        background: linear-gradient(to right, #EDC242, #D8AC27);
+        border: none;
+        color: #330811;
+        padding: 10px 32px;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 20px;
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 800;
+        cursor: pointer;}
+
+         /* back to calendar */
+
+
+        /* footer */
+    footer{
+        background-color: #58304B;
+        color: #ffffff;}
+        .fa {
+            color: #ffffff;
+            padding: 20px;
+            font-size: 80px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 0 auto;
+            border-radius: 100px;}
+          .fa-facebook {
+            border: 2px solid #fff;
+            border-radius: 60rem;
+            padding: 2px;
+            color: white;
+          }
+          .fa-instagram {
+            border: 2px solid #fff;
+            border-radius: 60rem;
+            padding: 2px;
+            color: white;}
+          
+/*
+    .socialicon{
+        width: 30%;
+        margin-top: 1rem;}*/
+
