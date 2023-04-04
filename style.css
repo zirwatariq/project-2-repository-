@@ -124,7 +124,7 @@
   }
    /* calendar and music icon */
 .icon {
-    width: 30%;
+    width: 20%;
   }
 .primary-navigation ul {
     display: flex;
@@ -284,30 +284,18 @@ h2{
         padding: 0.6rem;
         margin-bottom: -2rem;
         margin-top: -0.1rem;}
-    .social{
-        text-align: center;
-        padding: 0.5rem;
-        }
-    .fa {
-            color: #ffffff;
-            padding: 20px;
-            width: 50px;
-            width: 30px;
-            text-align: center;
-            text-decoration: none;
-            margin: 0 auto;
-            border-radius: 100px;}
-    .fa-facebook {
-            border: 2px solid #fff;
-            border-radius: 60rem;
-            padding: 2px;
-            color: white;
-          }
-    .fa-instagram {
-            border: 2px solid #fff;
-            border-radius: 60rem;
-            padding: 2px;
-            color: white;}
+    .social {
+      max-width: 14rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      
+    }    
+    .sicon {
+      margin-top: 1rem;
+      width: 30%;
+    }
+   
 
             /*homepage input */
             label {
