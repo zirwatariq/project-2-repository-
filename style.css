@@ -130,7 +130,7 @@
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 20px;
   display: block;
   font-size: 1.2rem;
   font-weight: 800;
@@ -218,14 +218,19 @@ h1{
     font-family: 'Roboto', Helvetica, sans-serif;
     color: #58304B;
     line-height: 1.1em;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-weight: 800;}
     .title {
         color: #FFCA29;
+        margin-top: 1rem;
+        line-height: 1.15em;
+    }
+    .calmain {
+      color: #330811;
     }
 .day{
     color: #330811;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 600;}
 p{
     margin-top: 1rem;
@@ -242,9 +247,9 @@ p{
    /* heading two and second section */
 h2{
     font-family: 'Roboto', Helvetica, sans-serif;
-    color: #754866;
-    line-height: 1.1em;
-    font-size: 1.5rem;
+    color: #441E37;
+    line-height: 1.2em;
+    font-size: 1.7rem;
     font-weight: 800;}
 
 .secondpara {
@@ -358,14 +363,35 @@ h2{
                     padding: 10px 20px;
                     font-size: 1.2rem;
                     font-weight: 800;
-                    border-radius: 4px;
+                    border-radius: 20px;
                     cursor: pointer;
                     display: block;
                     margin: 0 auto;
                     margin-bottom: 2rem;
                     margin-top: 1rem;
                   }
-            
+            /* Calendar page */
+            .calendarpage {
+              padding: 1rem;
+            }
+            .num {
+              font-weight: 800;
+              color: #441E37;
+              font-size: 1.3rem;
+              z-index: 1000;
+            }
+            .stickynote {
+              width: 100%;
+          
+             
+            }
+            .calendarpage {
+             gap: 1rem;
+              display: grid;
+              grid-template-columns: 30% 30% 30%;
+              margin-bottom: 1rem;
+            }
+           
               
           
 
