@@ -202,8 +202,7 @@ nav.breadcrumb ol {
   
 nav.breadcrumb li {
     display: inline;
-    color: #59314C;
-    font-weight: 500;}
+   }
   
 nav.breadcrumb li + li::before {
     display: inline-block;
@@ -214,7 +213,9 @@ nav.breadcrumb li + li::before {
     content: "";}
   
 nav.breadcrumb li [aria-current="page"] {
-   font-weight: 600;}
+   font-weight: 600;
+   color: #59314C;
+  }
 
     /* heading one and paragraph */
 h1{
