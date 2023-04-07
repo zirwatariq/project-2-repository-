@@ -203,6 +203,9 @@ nav.breadcrumb ol {
 nav.breadcrumb li {
     display: inline;
    }
+   nav.breadcrumb li a {
+    text-decoration: underline;
+   }
   
 nav.breadcrumb li + li::before {
     display: inline-block;
