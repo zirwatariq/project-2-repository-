@@ -67,7 +67,7 @@
 .tophead .menu {
     clear: both;
     max-height: 0;
-    transition: max-height .2s ease-out;
+    transition: .2s ease-out;
   }
 
   /* menu icon */
@@ -127,6 +127,7 @@
   }
 .nextpage {
   background: linear-gradient(to right, #EDC242, #D8AC27);
+  box-shadow:6px 6px 12px black;
   border: none;
   color: #330811;
   padding: 10px 32px;
@@ -144,14 +145,19 @@
  
 }
 
-
    /* calendar and music icon */
 .icon {
     width: 30%;
   }
-  .playmusic {
+  #iconn {
     width: 15%;
-    margin-top: 1rem;
+    align-items: center;
+    display: inline-block;
+  }
+  .audio {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
   }
   .bulb {
     width: 10%;
@@ -243,7 +249,8 @@ p{
     margin-top: 1rem;
     /*! margin-bottom: 1rem; */}
 .aheader {
-    padding: 1rem;}
+    padding: 1rem;
+  }
 .aheaderc {
     background-color: #59314C;
     padding: 0.6rem;
@@ -296,13 +303,12 @@ h2{
 
     .work {
         padding: 0.6rem;
-        list-style: none;
-    }    
-
+        list-style: none;}    
 
           /* button */
     #my-button {
         background: linear-gradient(to right, #EDC242, #D8AC27);
+        box-shadow: 3px 3px 12px rgb(0, 0, 0);
         border: none;
         color: #330811;
         padding: 10px 32px;
@@ -345,8 +351,6 @@ h2{
       margin-top: 1rem;
       width: 30%;
     }
-   
-
             /*homepage input */
             label {
                 display: block;
@@ -366,6 +370,7 @@ h2{
                 button {
                     background: linear-gradient(to right, #EDC242, #D8AC27);
                     border: none;
+                    box-shadow: 3px 3px 10px rgb(0, 0, 0);
                     color: #330811;
                     padding: 10px 20px;
                     font-size: 1.2rem;
@@ -398,7 +403,168 @@ h2{
               grid-template-columns: 30% 30% 30%;
               margin-bottom: 1rem;
             }
-           
+            @media (min-width: 500px) {
+             body{
+                 max-width: 60rem; 
+                 font-size: 1.1rem;
+                margin: 0 auto; 
+            }
+            .tophead .logo {
+              display: block;
+              float: left;
+              width: 30%;
+              margin-top: 1.5rem;
+            }
+            .tophead {
+              max-width: 40rem;
+              margin: 0 auto;
+                margin-bottom: 0px;
+              margin-bottom: 1rem;
+              padding: 0.5rem;
+}
+            .icon {
+              width: 15%;
+            }
+            .aheader {
+              padding: 1.2rem;
+              color: #ffffff;
+              background-color: #58304B;
+            }
+            .secondpara {
+              max-width: 40rem;
+              margin: 0 auto;
+                margin-top: 0px;
+              margin-top: 1rem;
               
-          
+            }
+            .thirdpara{
+              
+              margin: 0 auto;
+                margin-top: 0px;
+              margin-top: 1rem;
+              background-color: #f4f4f4;
+            }
+            .work {
+              max-width: 40rem;
+              margin: 0 auto;
+            }
+            h1{
+              font-family: 'Roboto', Helvetica, sans-serif;
+              color: #ffffff;
+              line-height: 1.2em;
+              font-size: 2.1rem;
+              font-weight: 800;
+              margin-left: 6rem;}
+              .aheade {
+                color: #330811;
+                max-width: 40rem;
+              background-color: #ffffff;}
+              .day{
+                color: #ffffff;
+                font-size: 1.6rem;
+                font-weight: 600;}  
+
+                figure img {
+                  display: block;
+                  width: 35%;
+                  margin: 0 auto;
+                  margin-top: -1.5rem;}
+                
+              figcaption {
+                  font-size: 16px;
+                  color: #330811;
+                  text-align: center;}
+
+                  .bulb {
+                    width: 8%;
+                  }
+                  .bac {
+                    margin-left: 5rem;}
+                    h2{
+                      font-size: 1.9rem;
+                      max-width: 40rem;
+                      margin: 0 auto;
+                    }
+                  h3{ 
+                    font-size: 1.7rem;
+                  }
+                  
+                    #my-button{
+                      font-size: 1.6rem;
+                      margin-top: 1rem;
+                     }
+                     .nextpage {
+                      font-size: 1.6rem;
+                      max-width: 17rem;
+                      padding: 15px 15px;
+                     }
+                     button {
+                      font-size: 1.6rem;
+                      margin-top: 1.3rem;
+                     }
+                     .backtop {
+                      width: 8%;
+                      margin-top: -1.9rem;
+                      margin-right: 1rem;
+                     }
+
+                    footer p{
+                      max-width: 40rem;
+                      margin: 0 auto;
+                    }
+                    .aheader p {
+                      padding: 1rem;
+                      max-width: 40rem;
+                      margin: 0 auto;}
+                    
+                    .breadcrumb {
+                        margin-left: 6rem;
+                    }
+                    .navbar ul {
+                      max-width: 40rem;
+                      margin: 0 auto;}
+                      .calendarpage {
+                      max-width: 40rem;
+                      margin:0 auto;
+                       }
+                       input[type="text"] {
+                        width: 40%;
+                        padding: 13px;
+                        font-size: 18px;
+                       }
+                       .input {
+                        display: flex;
+                        flex-direction: row;
+                        max-width: 40rem;
+                        margin: 2rem auto;
+                       }
+                       .aheaderc p{
+                        max-width: 40rem;
+                        margin: 0 auto;
+                        padding: 1rem;
+                       }
+                       .title {
+                        max-width: 40rem;
+                        margin: 0 auto;
+                        padding: 1rem;
+                        font-size: 2.4rem;
+                       }
+
+            }
+              
+            @media (min-width: 700px) {
+              body{
+                max-width: 80rem; 
+                font-size: 1.3rem;
+                  margin: 0 auto; 
+                  line-height: 1.5em;
+           }
+           .backtop {
+            margin-right: 4rem;
+            margin-top: -2.2rem;
+            width: 6%;}
+
+
+
+            }
 
