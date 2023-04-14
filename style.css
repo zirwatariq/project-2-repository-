@@ -192,7 +192,7 @@
      list-style: none;
      display: flex;
      flex-direction: row;
-     align-content: flex-end;
+     justify-content: flex-end;
      cursor: pointer;
      gap: 10px;
   }
@@ -223,7 +223,9 @@
 
    /* breadcrumbs */
 nav.breadcrumb {
-    padding: 0.8rem 1rem;}
+    padding: 0.8rem 1rem;
+    /*! margin-top: 6rem; */
+}
 
 nav.breadcrumb ol {
     margin: 0;
@@ -245,7 +247,7 @@ nav.breadcrumb li + li::before {
     height: 0.8rem;
     content: "";}
   
-nav.breadcrumb li [aria-current="page"] {
+nav.breadcrumb [aria-current="page"] {
    font-weight: 600;
    color: #59314C;
   }
@@ -255,8 +257,16 @@ h1{
     font-family: 'Roboto', Helvetica, sans-serif;
     color: #58304B;
     line-height: 1.1em;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 700;}
+    .abouth1{
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #58304B;
+    line-height: 1.1em;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    }
     .title {
         color: #FFCA29;
         margin-top: 1rem;
@@ -292,6 +302,9 @@ h2{
 
 .secondpara {
     padding: 1rem; }
+    .secondparai {
+      padding: 1rem;
+    }
 .steps{
    counter-reset: item;
     margin-top: 0.5rem;
@@ -321,13 +334,16 @@ h3{
 font-family: 'Roboto', Helvetica, sans-serif;
 color: #3a2333;
 line-height: 1.1em;
-font-size: 1.3rem;
+font-size: 1.5rem;
 font-weight: 600;}
 .thirdpara {
 padding: 1rem;}
 
-.thirdparai{
-  background-color: #F4F4F4;     
+#thirdparai{
+  background-color: #F4F4F4;   
+  padding: 1rem;  
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 .work {
  padding: 0.6rem;
@@ -360,7 +376,10 @@ padding: 1rem;}
 }        
 
 /* footer */
-.backtop {
+#backtop img {
+  width: 100%;
+}
+#backtop {
         width: 15%;
         position: absolute;
         right: 0;
@@ -433,6 +452,9 @@ padding: 1rem;}
                 margin: 0 auto;
                 margin-bottom: 10px;
                 margin-top: 1rem;}
+
+                .inputt {
+                  display: none;}
                 button {
                     background: linear-gradient(to right, #EDC242, #D8AC27);
                     border: none;
@@ -448,10 +470,24 @@ padding: 1rem;}
                     margin-bottom: 2.5rem;
                     margin-top: 1.5rem;
                   }
+                  .popup{
+                    width: 20rem;
+                    background: #58304B;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+                   padding: 1rem;
+                  }
             /* Calendar page */
             .calendarpage {
               padding: 1rem;
             }
+            .calmain {
+              margin-top: 3rem;
+              padding: 1rem;
+}
             .num {
               font-weight: 800;
               color: #441E37;
@@ -466,7 +502,7 @@ padding: 1rem;}
              gap: 1rem;
               display: grid;
               grid-template-columns: 30% 30% 30%;
-              margin-bottom: 1rem;
+              margin-bottom: 2rem;
             }
             @media (min-width: 500px) {
              body{
@@ -477,17 +513,20 @@ padding: 1rem;}
             .header .logo {
               display: block;
               float: left;
-              width: 30%;
+              width: 25%;
+              padding: 1.5rem;
             }
             .header {
-              max-width: 60rem;
+              max-width: 57rem;
               margin: 0 auto;
-              margin-bottom: 1rem;
-              
-}
+              /*! margin-bottom: 1rem; */}
+
+              .header li a{
+                font-size: 1.9rem;
+              }
 .header .menu-icon .navicon {
-  width: 45px;
-  height: 6px;
+  width: 40px;
+  height: 5px;
 }
 .header .menu-icon {
   margin-left: 33.5rem;
@@ -514,7 +553,11 @@ padding: 1rem;}
               margin: 0 auto;
               margin-top: 0px;
               margin-top: 1rem;
-              background-color: #f4f4f4;
+              max-width: 40rem;
+              
+            }
+            .navbar{
+              margin-top: 2rem;
             }
             .navbar li {
               width: 50%;}
@@ -528,7 +571,7 @@ padding: 1rem;}
               line-height: 1.2em;
               font-size: 2.1rem;
               font-weight: 800;
-              margin-left: 6rem;}
+              margin-left: 7.5rem;}
               .aheade {
                 color: #330811;
                 max-width: 40rem;
@@ -553,7 +596,7 @@ padding: 1rem;}
                     width: 8%;
                   }
                   .bac {
-                    margin-left: 5rem;}
+                    margin-left: 7.5rem;}
                     h2{
                       font-size: 1.9rem;
                       max-width: 40rem;
@@ -576,10 +619,10 @@ padding: 1rem;}
                       font-size: 1.6rem;
                       margin-top: 1.3rem;
                      }
-                     .backtop {
+                     #backtop {
                       width: 8%;
                       margin-top: -1.9rem;
-                      margin-right: 1rem;
+                      margin-right: 4rem;
                      }
 
                     footer p{
@@ -592,7 +635,7 @@ padding: 1rem;}
                       margin: 0 auto;}
                     
                     .breadcrumb {
-                        margin-left: 6rem;
+                        margin-left: 7.5rem;
                     }
                     .navbar ul {
                       max-width: 40rem;
@@ -623,6 +666,9 @@ padding: 1rem;}
                         padding: 1rem;
                         font-size: 2.4rem;
                        }
+                       .social li{
+                        width: 5%;
+                      }
 
             }
               
@@ -680,9 +726,13 @@ padding: 1rem;}
             padding: 2rem;
             max-width: 90rem;
           }
-          .aheader {
-            background-color: white;
-            color: #000000;}
+          .aheade {
+            color: #330811;
+            max-width: 38rem;
+            background-color: #ffffff;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+          }
             .aheader p{
               margin-bottom: 5rem;
             }
@@ -721,14 +771,14 @@ padding: 1rem;}
 
                 h2{
                  font-size: 2.2rem;
-                 color: #58304B;
+                 color: #ffffff;
                  max-width: 70rem;
                  margin-top: 2rem;
                  margin-bottom: 2rem;
                 }
             
                 .steps {
-                  color: #000000;
+                  color: #ffffff;
                  
                 }
                 h3{
@@ -820,4 +870,22 @@ padding: 1rem;}
             margin-bottom: 10px;
             margin-top: 1rem;}
 
+
+            #backtop {
+              width: 5%;}
+              .breadcrumb {
+                margin-top: 8rem;
+                margin-left: 1rem;}
+              /* calender page */
+              
+                .calendarpage {
+                  max-width: 50rem;
+                  margin: 0 auto; }
+                  .calendarpage {
+                    gap: 1rem;
+                    display: grid;
+                    grid-template-columns: 25% 25% 25% 25%;
+                    margin-bottom: 2rem;
+                  }
+              
           }
