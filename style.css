@@ -16,7 +16,7 @@
     html{
     font-family: 'Roboto', Helvetica, sans-serif;
     font-variation-settings: "wght" 400;
-    line-height: 1.6em; 
+    line-height: 1.7em; 
     font-size: 1rem;
     }
     body{
@@ -149,10 +149,10 @@
   }
 .nextpage {
   background: linear-gradient(to right, #EDC242, #D8AC27);
-  box-shadow:6px 6px 12px black;
+  box-shadow:0px 5px 11px #000;
   border: none;
   color: #330811;
-  padding: 10px 32px;
+  padding: 10px 12px;
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
@@ -162,7 +162,7 @@
   font-weight: 800;
   cursor: pointer;
   max-width: 14rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -186,7 +186,7 @@
   }
   /* calender and music icon */
   .navbar li{
-    width: 13%;
+    width: 10%;
   }
   .navbar ul {
      list-style: none;
@@ -194,7 +194,9 @@
      flex-direction: row;
      justify-content: flex-end;
      cursor: pointer;
-     gap: 10px;
+     gap: 1rem;
+     padding: 0.4rem;
+     margin-right: 1rem;
   }
   .navbar ul li ul {
     position:absolute;
@@ -223,7 +225,7 @@
 
    /* breadcrumbs */
 nav.breadcrumb {
-    padding: 0.8rem 1rem;
+    padding: 0.1rem 1rem;
     /*! margin-top: 6rem; */
 }
 
@@ -283,13 +285,14 @@ p{
     margin-top: 1rem;
     /*! margin-bottom: 1rem; */}
 .aheader {
-    padding: 1rem;
+    padding: 1.3rem;
   }
 .aheaderc {
     background-color: #59314C;
-    padding: 0.6rem;
+    padding: 1.4rem;
     color: #ffffff;
     margin-bottom: 2rem;
+    margin-top: 5rem;
 }
 
    /* heading two and second section */
@@ -298,19 +301,23 @@ h2{
     color: #441E37;
     line-height: 1.2em;
     font-size: 1.7rem;
-    font-weight: 800;}
+    font-weight: 800;
+    max-width: 16rem;
+}
 
 .secondpara {
-    padding: 1rem; }
+    padding: 1.3rem; }
     .secondparai {
-      padding: 1rem;
+      padding: 0.6rem 1.3rem;
     }
 .steps{
    counter-reset: item;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
-   list-style: decimal;}
+   list-style: decimal;
+   padding: 1rem 0rem;
+}
 
    /* figure and caption */
     figure {
@@ -337,7 +344,7 @@ line-height: 1.1em;
 font-size: 1.5rem;
 font-weight: 600;}
 .thirdpara {
-padding: 1rem;}
+padding: 1.3rem;}
 
 #thirdparai{
   background-color: #F4F4F4;   
@@ -368,7 +375,7 @@ padding: 1rem;}
 /* back to calendar */
 .bac {
         margin-top: 2rem;
-        padding: 0.6rem;}
+        padding: 1rem;}
 .backc {
   text-decoration: none;
   color: #000000;
@@ -455,6 +462,9 @@ padding: 1rem;}
 
                 .inputt {
                   display: none;}
+                  .inp{
+                    margin-bottom: 3rem;
+                  }
                 button {
                     background: linear-gradient(to right, #EDC242, #D8AC27);
                     border: none;
@@ -470,16 +480,10 @@ padding: 1rem;}
                     margin-bottom: 2.5rem;
                     margin-top: 1.5rem;
                   }
-                  .popup{
-                    width: 20rem;
-                    background: #58304B;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    color: #fff;
-                   padding: 1rem;
+                  .flexx{
+                    display: none;
                   }
+                 
             /* Calendar page */
             .calendarpage {
               padding: 1rem;
@@ -488,16 +492,9 @@ padding: 1rem;}
               margin-top: 3rem;
               padding: 1rem;
 }
-            .num {
-              font-weight: 800;
-              color: #441E37;
-              font-size: 1.3rem;
-              z-index: 1000;
-            }
-            .stickynote {
-              width: 100%;
-             
-            }
+            .numb li{
+           list-style: none;}
+            
             .calendarpage {
              gap: 1rem;
               display: grid;
@@ -507,7 +504,7 @@ padding: 1rem;}
             @media (min-width: 500px) {
              body{
                  max-width: 60rem; 
-                 font-size: 1.1rem;
+                 font-size: 1.2rem;
                 margin: 0 auto; 
             }
             .header .logo {
@@ -533,13 +530,16 @@ padding: 1rem;}
   margin-top: 1.5rem;
 }
             .icon {
-              width: 15%;
+              width: 100%;
               margin-top: 7rem; 
             }
             .aheader {
               padding: 1.2rem;
               color: #ffffff;
               background-color: #58304B;
+            }
+            .aheaderc {
+              margin-top: 6rem;
             }
             .secondpara {
               max-width: 40rem;
@@ -548,6 +548,15 @@ padding: 1rem;}
               margin-top: 1rem;
               
             }
+            .secondparai {
+              max-width: 37rem;
+              margin: 0 auto;}
+              #thirdparai {
+                max-width: 55rem;
+                margin: 0 auto;
+                padding: 1rem 9rem;
+                margin-top: 2rem;
+}
             .thirdpara{
               
               margin: 0 auto;
@@ -556,14 +565,12 @@ padding: 1rem;}
               max-width: 40rem;
               
             }
-            .navbar{
-              margin-top: 2rem;
-            }
             .navbar li {
-              width: 50%;}
+              width: 5%;}
             .work {
               max-width: 40rem;
               margin: 0 auto;
+              padding: 2rem 0rem;
             }
             h1{
               font-family: 'Roboto', Helvetica, sans-serif;
@@ -571,7 +578,7 @@ padding: 1rem;}
               line-height: 1.2em;
               font-size: 2.1rem;
               font-weight: 800;
-              margin-left: 7.5rem;}
+              margin-left: 5.5rem;}
               .aheade {
                 color: #330811;
                 max-width: 40rem;
@@ -593,7 +600,7 @@ padding: 1rem;}
                   text-align: center;}
 
                   .bulb {
-                    width: 8%;
+                    width: 7%;
                   }
                   .bac {
                     margin-left: 7.5rem;}
@@ -635,11 +642,9 @@ padding: 1rem;}
                       margin: 0 auto;}
                     
                     .breadcrumb {
-                        margin-left: 7.5rem;
+                        margin-left: 5.5rem;
                     }
-                    .navbar ul {
-                      max-width: 40rem;
-                      margin: 0 auto;}
+                
                       .calendarpage {
                       max-width: 40rem;
                       margin:0 auto;
@@ -680,26 +685,26 @@ padding: 1rem;}
                   line-height: 1.6em;
            }
            .header {
-            max-width: 100rem;
+            max-width: 91rem;
             margin: 0 auto;
            border-bottom: none;
          }
-       
-           .backtop {
-            margin-right: 4rem;
-            margin-top: -2.2rem;
-            width: 5%;}
-            .header li {
-              float: left;
-              padding: 2rem;
-              background-color: #ffffff;
-            }
+         .work {
+          max-width: 44rem;}
+        .backtop {
+          margin-right: 4rem;
+          margin-top: -2.2rem;
+          width: 5%;}
+        .header li {
+          float: left;
+          padding: 2rem;
+          background-color: #ffffff;}
             .header li a {
               color: #330811;
               font-size: 1.5rem;
-              padding: 20px 10px;
+              padding: 20px 0px;
               border-right: none;
-              /*! margin-left: 4rem; */
+              text-decoration: underline 3px #FF8100;
             }
             .header .menu {
               clear: none;
@@ -716,7 +721,7 @@ padding: 1rem;}
               width: 20%;
           }
           .icon {
-            width: 15%;
+            width: 100%;
             margin-top: 10rem; 
           }
           .bigscreen{
@@ -739,18 +744,22 @@ padding: 1rem;}
             .aheaderc {
               display: flex;
               flex-direction: row;
-              max-width: 88rem;
+              max-width: 90rem;
               margin: 0 auto;
               background-color: #58304B;
+              margin-top: 8rem;
+              justify-content: center;
             }
+            .aheader{
+            padding: 1.2rem;
+            color: #000;
+            background-color: #FFF;}
             h1{
               color: #58304B;
               line-height: 1.2em;
               font-size: 2.5rem;
               font-weight: 800;
               margin-left: 1rem;}
-             
-
               .day {
                 color: #330811;
                 font-size: 1.9rem;
@@ -763,22 +772,21 @@ padding: 1rem;}
                 }
                 .secondparai{
                   color: #000000;
-                  width: 60%;
-                  margin: 0 auto;
-                  margin-bottom: 2rem;
-                 
+                 margin: 0 auto;
+                 max-width: 49rem;
                 }
 
                 h2{
                  font-size: 2.2rem;
-                 color: #ffffff;
+                 color: #441E37;
                  max-width: 70rem;
                  margin-top: 2rem;
-                 margin-bottom: 2rem;
+                 text-align: center;
                 }
             
                 .steps {
-                  color: #ffffff;
+                  color: #000000;
+                  max-width: 78rem;
                  
                 }
                 h3{
@@ -796,13 +804,16 @@ padding: 1rem;}
                   max-width: 40rem;
                   margin-left: 6rem;
                 }
-                .thirdparai{
+                #thirdparai{
                   background-color: #F4F4F4;
                   max-width: 88rem;
+                
+                  display: flex;
+                  /*! justify-items: center; */
                   margin: 0 auto;
                 }
                 figure img{
-                 width: 50%;
+                 width: 58%;
                  padding: 2rem;
                 }
                 .social li {
@@ -815,40 +826,37 @@ padding: 1rem;}
               margin-left: 8.2rem;
               margin-bottom: 1rem;
             }
-            .work {
-              margin-top: 4rem;
-            }
+            input[type="text"] {
+              padding: 15px;}
+           
+             
             .diff {
               float: left;
               max-width: 16rem;
-              padding: 3rem;
               font-size: 2.6rem;
               line-height: 1.1em;
-              margin-left: 18rem;
               margin-top: 3rem;
-              font-weight: 700;
+              text-align: left;
+            
             }
             .work li{
             width: 74%;
-            /*! padding: 0.1rem; */
             align-content: center;
-            /*! margin-top: 2rem; */
             }
-
             .work li:before {
             content: counter(item);
             background-color: transparent;
             border: 6px solid #FF8100;
             border-radius: 100%;
             color: #FF8100;
-           font-family: 'Roboto', Helvetica, sans-serif;
-           font-size: 2.7rem;
-           text-align: center;
-          display: inline-block;
-          padding: 1.5rem 1.8rem;}
+            font-family: 'Roboto', Helvetica, sans-serif;
+            font-size: 2.7rem;
+            text-align: center;
+            display: inline-block;
+            padding: 1.5rem 1.8rem;}
           .flex {
-            width: 60%;
-            padding: 2rem;}
+            width: 48%;
+            margin-right: 12rem;}
 
           label {
             display: block;
@@ -858,7 +866,7 @@ padding: 1rem;}
             margin-top: 8rem;
           }
           input[type="textt"] {
-            padding: 13px;
+            padding: 18px;
             color: #330811;
             font-size: 16px;
             border: 2px solid #330811;
@@ -869,13 +877,25 @@ padding: 1rem;}
             margin: 0 auto;
             margin-bottom: 10px;
             margin-top: 1rem;}
-
+            .navbar li {
+              width: 3.5%;
+            }
+            .flexx{
+              display:block;
+              margin-top: -4rem;
+              margin-left: -4rem;
+            }
+            .inputt {
+              display: block;
+            }
+            
 
             #backtop {
               width: 5%;}
               .breadcrumb {
-                margin-top: 8rem;
-                margin-left: 1rem;}
+                padding: 2.2rem;
+                margin-left: 1.5rem;
+}
               /* calender page */
               
                 .calendarpage {
