@@ -47,7 +47,6 @@
     list-style: none;
     overflow: hidden;
     background-color: #59314C;
-    /*! margin-top: 2rem; */
   }
   
   .header li a {
@@ -119,7 +118,6 @@
 .header .menu-btn:checked ~ .menu {
   max-height: 700px;
   height: 500px;
-  /*! margin-top: 2rem; */
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -161,7 +159,7 @@
   /*top button*/
 .nextpage {
   background: linear-gradient(to right, #EDC242, #D8AC27);
-  box-shadow:0px 5px 11px #000;
+  box-shadow:0px 3px 8px #000;
   border: none;
   color: #330811;
   padding: 10px 0px;
@@ -199,7 +197,7 @@
 /* about page button */
 .nextpage1 {
   background: linear-gradient(to right, #EDC242, #D8AC27);
-  box-shadow:0px 5px 11px #000;
+  box-shadow:0px 2px 5px #000;
   border: none;
   color: #330811;
   padding: 10px 12px;
@@ -342,19 +340,16 @@ h1{
         margin-top: 1rem;
         line-height: 1.17em;
     }
-    .calmain {
-      color: #330811;
-    }
-.day{
+   .day{
     color: #330811;
     font-size: 1.5rem;
     font-weight: 600;}
-p{
+    p{
     margin-top: 0.5rem;}
-.aheader {
+   .aheader {
     padding: 1.3rem;
   }
-.aheaderc {
+   .aheaderc {
     background-color: #59314C;
     padding: 1.4rem;
     color: #ffffff;
@@ -378,7 +373,6 @@ h2{
     }
 .steps{
    counter-reset: item;
-    /*! margin-top: 0.5rem; */
     margin-bottom: 1rem;
     margin-left: 1rem;
    list-style: decimal;
@@ -430,38 +424,36 @@ padding: 1.3rem;}
 
 /* activity psge button */
  #my-button {
-        background: linear-gradient(to right, #EDC242, #D8AC27);
-        box-shadow: 3px 1px 7px rgb(0, 0, 0);
+        background: #FFC700;
+        box-shadow: inset 1px 2px 8px #330811;
         border: none;
         color: #330811;
-        padding: 10px 32px;
+        padding: 10px 25px;
         margin: 0 auto;
         text-align: center;
         text-decoration: none;
-        border-radius: 20px;
+        border-radius: 35px;
         display: block;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: 800;
         cursor: pointer;}
         
         #my-button:link {
-          text-decoration: none;
+          box-shadow: inset 3px 2px 10px #330811;
         }
         #my-button:visited{
           box-shadow:none;
         }
         #my-button:hover{
-          box-shadow: 3px 5px 1px #000000;
+          box-shadow: 3px 4px 1px #330811;
         }
         #my-button:focus{
-          box-shadow: 3px 5px 1px #000000;
+          box-shadow: 3px 4px 1px #330811;
         }
         #my-button:active{
-          color: #e3a507;
-          background: #330811;
-          box-shadow: 3px 5px 1px #ffffff;
-        
+          box-shadow: 3px 3px 10px rgb(0, 0, 0);
         }
+
 /* back to calendar */
 .bac {
         margin-top: 2rem;
@@ -493,6 +485,7 @@ padding: 1.3rem;}
       list-style: none; 
       margin-top: 1rem;
       width: 13%;
+     
     }    
     .social ul{
       display: flex;
@@ -517,7 +510,7 @@ padding: 1.3rem;}
               display: flex;
               justify-content: start;
               align-items: start;
-              gap: 1rem;
+              gap: 1.2rem;
               
             }
             .work li:before {
@@ -531,7 +524,6 @@ padding: 1.3rem;}
                text-align: center;
                display: inline-block;
                padding: 0.5rem 0.8rem;
-               /*float: left;*/
              }
             label {
                 display: block;
@@ -587,21 +579,30 @@ padding: 1.3rem;}
                  
             /* Calendar page */
             .calendarpage {
-              padding: 1rem;
-            }
-            .calmain {
-              margin-top: 3rem;
-              padding: 1rem;
-}
-            .numb li{
-           list-style: none;}
-            
+              padding: 1rem;}
+         
             .calendarpage {
              gap: 1rem;
               display: grid;
-              grid-template-columns: 30% 30% 30%;
-              margin-bottom: 2rem;
+              grid-template-columns: auto auto auto;
+              margin-bottom: 2rem;}
+            .stickynote {
+              width: 100%;
+              cursor: pointer;
             }
+            .container {
+               position: relative;}
+            .num {
+                position: absolute;
+                margin-top: -3.3rem;
+                margin-left: 1.5rem;
+                font-weight: 700;
+                color: #59314C;}
+              .calmain {
+               color: #330811;
+               padding: 1.3rem;
+               margin-top: 3.7rem;}
+
             @media (min-width: 500px) {
              body{
                  max-width: 60rem; 
@@ -617,23 +618,22 @@ padding: 1.3rem;}
             }
             .header {
               max-width: 57rem;
-              margin: 0 auto;
-              /*! margin-bottom: 1rem; */}
+              margin: 0 auto;}
 
               .header li a:link{
-                font-size: 1.9rem;
+                font-size: 1.7rem;
               }
               .header li a:visited{
-                font-size: 1.9rem;
+                font-size: 1.7rem;
               }
               .header li a:hover{
-                font-size: 1.9rem;
+                font-size: 1.7rem;
               }
               .header li a:focus{
-                font-size: 1.9rem;
+                font-size: 1.7rem;
               }
               .header li a:active{
-                font-size: 1.9rem;
+                font-size: 1.7rem;
               }
 .header .menu-icon .navicon {
   width: 40px;
@@ -658,9 +658,8 @@ padding: 1.3rem;}
             .secondpara {
               max-width: 40rem;
               margin: 0 auto;
-                margin-top: 0px;
+              margin-top: 0px;
               margin-top: 1rem;
-              
             }
             .secondparai {
               max-width: 37rem;
@@ -672,17 +671,15 @@ padding: 1.3rem;}
                 margin-top: 2rem;
 }
             .thirdpara{
-              
               margin: 0 auto;
               margin-top: 0px;
               margin-top: 1rem;
               max-width: 40rem;
-              
             }
             .navbar li {
               width: 5%;}
             .work {
-              max-width: 40rem;
+              width: 33rem;
               margin: 0 auto;
               padding: 2rem 0rem;
             }
@@ -726,7 +723,6 @@ padding: 1.3rem;}
                   h3{ 
                     font-size: 1.7rem;
                   }
-                  
                     #my-button{
                       font-size: 1.6rem;
                       margin-top: 1rem;
@@ -734,7 +730,7 @@ padding: 1.3rem;}
                      .nextpage {
                       font-size: 1.6rem;
                       max-width: 17rem;
-                      padding: 15px 15px;
+                      padding: 12px 0;
                      }
                      button {
                       font-size: 1.6rem;
@@ -745,7 +741,6 @@ padding: 1.3rem;}
                       margin-top: -1.9rem;
                       margin-right: 4rem;
                      }
-
                     footer p{
                       max-width: 40rem;
                       margin: 0 auto;
@@ -758,7 +753,6 @@ padding: 1.3rem;}
                     .breadcrumb {
                         margin-left: 5.5rem;
                     }
-                
                       .calendarpage {
                       max-width: 40rem;
                       margin:0 auto;
@@ -788,6 +782,15 @@ padding: 1.3rem;}
                        .social li{
                         width: 5%;
                       }
+                      .work li:before {
+                        padding: 0.5rem 1rem;
+                      }
+                        .calendarpage {
+                          grid-template-columns: repeat(4, 1fr);
+                          }
+                         .calmain {
+                          padding: 1.5rem 2.5rem;
+                          margin-top: 5rem;}  
 
             }
               
@@ -801,16 +804,19 @@ padding: 1.3rem;}
            .header {
             max-width: 91rem;
            border-bottom: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 3rem;
          }
          .work {
-          max-width: 44rem;}
+          max-width: 40rem;}
         .backtop {
           margin-right: 4rem;
           margin-top: -2.2rem;
           width: 5%;}
         .header li {
-          float: left;
-          padding: 2rem;
           background-color: #ffffff;
          }
             .header li a {
@@ -822,6 +828,9 @@ padding: 1.3rem;}
               clear: none;
               float: right;
               max-height: none;
+              display: flex;
+              justify-content: flex-end;
+              justify-items: center;
             }
             .header .menu-icon {
               display: none;
@@ -830,7 +839,7 @@ padding: 1.3rem;}
               display: block;
               float: left;
               padding: 2rem;
-              width: 20%;
+              width: 50%;
           }
           .icon {
             width: 100%;
@@ -928,9 +937,9 @@ padding: 1.3rem;}
                 #thirdparai{
                   background-color: #F4F4F4;
                   max-width: 88rem;
-                  display: flex;
-                  margin: 0 auto;
-                  margin-top: 2rem;
+                  display: grid;
+                  grid-template-columns: 1fr 2fr;
+                  justify-content: center;
                 }
                 figure img{
                  width: 58%;
@@ -946,14 +955,6 @@ padding: 1.3rem;}
               margin-left: 8.2rem;
               margin-bottom: 1rem;
             }
-            input[type="text"] {
-              padding: 15px;}
-
-              #my-button {
-                font-size: 2.5rem;
-                padding: 1rem 3rem;
-}
-
             .diff {
               float: left;
               max-width: 16rem;
@@ -964,7 +965,7 @@ padding: 1.3rem;}
               text-align: left;}
               
             .work li{
-            width: 74%;
+            /*! width: 71%; */
             align-content: center;
             }
             .work li:before {
@@ -1024,6 +1025,13 @@ padding: 1.3rem;}
                     grid-template-columns: 25% 25% 25% 25%;
                     margin-bottom: 2rem;
                   }
+                  .num {
+                    font-size: 1.5rem;
+                    margin-left: 2rem;
+                   }
+                   .calmain {
+                             margin-left: -6.6rem;
+                              margin-top: 8rem;} 
                   /*homepage */
                   .abouth1 {
                     font-size: 2.5rem;
@@ -1036,4 +1044,11 @@ padding: 1.3rem;}
               }
               .nextpage {
                 margin-right: 2.5rem;}
+                input[type="text"] {
+                  padding: 15px;}
+    
+                  #my-button {
+                    font-size: 2.5rem;
+                    padding: 0.8rem 3rem;}
+                 
           }
