@@ -251,7 +251,7 @@
   .bulb {
     width: 10%;
   }
-  /* calender and music icon */
+  /* music icon with options*/
   .navbar li{
     width: 10%;
   }
@@ -261,7 +261,7 @@
      flex-direction: row;
      justify-content: flex-end;
      cursor: pointer;
-     gap: 1rem;
+     gap: 2rem;
      padding: 0.4rem;
      margin-right: 1rem;
   }
@@ -298,7 +298,9 @@ nav.breadcrumb {
 nav.breadcrumb ol {
     margin: 0;
     padding-left: 0;
-    list-style: none;}
+    list-style: none;
+    margin-bottom: 1rem;
+}
   
 nav.breadcrumb li {
     display: inline;
@@ -369,7 +371,7 @@ h2{
 .secondpara {
     padding: 0.5rem 1.3rem; }
     .secondparai {
-      padding: 0.6rem 1.3rem;
+      padding: 0.6rem 2rem;
     }
 .steps{
    counter-reset: item;
@@ -377,7 +379,9 @@ h2{
     margin-left: 1rem;
    list-style: decimal;
    padding: 1rem 0rem;
-}
+}  
+.stepsi {
+  margin-top: 1rem;}
 
    /* figure and caption */
     figure {
@@ -594,8 +598,8 @@ padding: 1.3rem;}
                position: relative;}
             .num {
                 position: absolute;
-                margin-top: -3.3rem;
-                margin-left: 1.5rem;
+                margin-top: -2.3rem;
+                margin-left: 1rem;
                 font-weight: 700;
                 color: #59314C;}
               .calmain {
@@ -839,11 +843,14 @@ padding: 1.3rem;}
               display: block;
               float: left;
               padding: 2rem;
-              width: 50%;
+              width: 45%;
           }
           .icon {
             width: 100%;
             margin-top: 10rem; 
+            /*! padding: -21rem; */
+            /*! margin-right: 86rem; */
+            margin-left: -2rem;
           }
           .bigscreen{
             display: flex;
@@ -1002,7 +1009,7 @@ padding: 1.3rem;}
             }
             .flexx{
               display:block;
-              margin-top: -4rem;
+              margin-top: -6rem;
               margin-left: -4rem;
             }
             .inputt {
