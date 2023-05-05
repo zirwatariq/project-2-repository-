@@ -653,6 +653,22 @@ font-weight: 600;}
                color: #330811;
                padding: 1.3rem;
                margin-top: 3.7rem;}
+               /* about page */
+               .oneabout {
+                padding: 0.1rem 1.3rem;
+                position: relative;
+                margin-top: 2rem;
+               }
+                /* this sets the circle in bg */
+                .oneabout ::after {
+               content: "";
+               position: absolute;
+               top: 0;
+              right: 0;
+              width: 10%;
+              height: 15%;
+              background-image: url(assets/bg-24.png);
+              background-size: cover;}
 
             @media (min-width: 600px) {
              body{
@@ -830,10 +846,7 @@ font-weight: 600;}
                     .breadcrumb {
                         margin-left: 5.5rem;
                     }
-                      .calendarpage {
-                      max-width: 40rem;
-                      margin:0 auto;
-                       }
+                    
                        input[type="text"] {
                         width: 40%;
                         padding: 13px;
@@ -863,9 +876,12 @@ font-weight: 600;}
                         padding: 0.5rem 1rem;
                       }
                       /* calenar page */
-                        .calendarpage {
-                          grid-template-columns: repeat(4, 1fr);
-                          }
+                      .calendarpage {
+                        grid-template-columns: repeat(4, 1fr);
+                        max-width: 40rem;
+                        margin:0 auto;
+                         }
+                       
                          .calmain {
                           padding: 1.5rem 2.5rem;
                           margin-top: 5rem;}  
@@ -874,7 +890,28 @@ font-weight: 600;}
                           margin-top: -3rem;
                           margin-left: 2rem;
                          }
+                         /* about page */
+                         .oneabout {
+                          max-width: 48rem;
+                          padding: 0.1rem 3.3rem;
+                          position: relative;
+                          margin-top: 2rem;
+                          margin: 3rem auto;
+                         }
+                          /* this sets the circle in bg */
+                          .oneabout ::after {
+                         content: "";
+                         position: absolute;
+                         top: 0;
+                        right: 0;
+                        width: 6%;
+                        height: 20%;
+                        background-image: url(assets/bg-24.png);
+                        background-size: cover;}
+                        .abouth1 {
+                          margin-left: 0rem;
                         }
+                      }
       
             @media (min-width: 900px) {
               body{
@@ -936,16 +973,6 @@ font-weight: 600;}
             padding: 2rem;
             max-width: 90rem;
           }
-        
-            .aheaderc {
-              display: flex;
-              flex-direction: row;
-              max-width: 90rem;
-              margin: 0 auto;
-              background-color: #58304B;
-              margin-top: 8rem;
-              justify-content: center;
-            }
           
              .secondparai{
                  color: #000000;
@@ -1131,7 +1158,7 @@ font-weight: 600;}
                 .one ::after {
                 content: "";
                 position: absolute;
-                top: -10rem;
+                top: -9rem;
                 right: 37rem;
                 width: 16%;
                 height: 37%;
@@ -1172,6 +1199,18 @@ font-weight: 600;}
                   margin: 0 auto;
                   margin-bottom: 1rem;
                 }
-                
-
-          }
+                   /* about page */
+                   .oneabout {
+                    max-width: 50rem;
+                    padding: 0.1rem 3.3rem;
+                    position: relative;
+                    margin-top: 2rem;
+                    margin: 3rem auto;
+                   }
+                    /* this sets the circle in bg */
+                    .oneabout ::after {
+                  display: none;}
+                  .abouth1 {
+                    margin-left: 0rem;
+                  }
+              }
