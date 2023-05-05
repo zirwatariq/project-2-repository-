@@ -392,7 +392,7 @@ background-image: url(assets/bg-25.png);
 background-size: cover;}
 
     .secondparai {
-      padding: 0.6rem 2rem;
+      padding: 1.5rem 2.2rem;
     }
 .steps{
    counter-reset: item;
@@ -485,7 +485,6 @@ font-weight: 600;}
 
 /* back to calendar */
 .bac {
-        /*! margin-top: 2rem; */
         padding: 1rem 0rem;
         margin-left: 1rem;
 }
@@ -607,6 +606,12 @@ font-weight: 600;}
                   .inputt{
                     display: none;
                   }
+                  .aheaderc {
+                    padding: 1.4rem;
+                    margin-top: 5rem;
+                    background-color: #58304B;
+                    color: #fff;
+}
                  
             /* Calendar page */
             .calendarpage {
@@ -783,6 +788,7 @@ font-weight: 600;}
                       font-size: 2.1rem;
                       max-width: 40rem;
                       margin: 0 auto;
+                      margin-left: 11rem;
                     }
                     .two {
                       padding: 2.3rem 3.5rem;
@@ -1054,26 +1060,22 @@ font-weight: 600;}
             align-content: center;
             }
             .work li:before {
-            content: counter(item);
-            background-color: transparent;
             border: 6px solid #FF8100;
-            border-radius: 100%;
-            color: #FF8100;
-            font-family: 'Roboto', Helvetica, sans-serif;
             font-size: 2.7rem;
-            text-align: center;
-            display: inline-block;
             padding: 1.5rem 1.8rem;}
-          .flex {
-            width: 48%;
-            margin-right: 12rem;}
+          
 
           label {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            max-width: 19rem;
             margin-bottom: 10px;}
           .inputt {
-            max-width: 19rem;
             margin-top: 8rem;
+          }
+          .flexx {
+            display: flex;
+            flex-direction: column;
           }
           input[type="textt"] {
             padding: 18px;
@@ -1085,14 +1087,7 @@ font-weight: 600;}
             .navbar li {
               width: 3.5%;
             }
-            .flexx{
-              display:block;
-              margin-top: -6rem;
-              margin-left: -4rem;
-            }
-            .inputt {
-              display: block;
-            }
+           
             #backtop {
               width: 5%;}
               .breadcrumb {
@@ -1128,14 +1123,17 @@ font-weight: 600;}
               text-align: center;
               margin-top: 2rem;
               }
-              .nextpage {
-                margin-right: 2.5rem;}
+             
                 input[type="text"] {
                   padding: 15px;}
     
                   #my-button {
                     font-size: 2rem;
                     padding: 0.8rem 3rem;}
+                    .topbox {
+                      display: flex;
+                      flex-direction: row;
+                    }
                 
                  .wide {
                   background-color: #59314C;
