@@ -627,8 +627,28 @@ font-weight: 600;}
                 position: absolute;
                 margin-top: -2.3rem;
                 margin-left: 1rem;
+                }
+                .calnum:link {
                 font-weight: 700;
-                color: #59314C;}
+                color: #59314C;
+                }
+                .calnum:visited {
+                  font-weight: 700;
+                  color: #6d3d5d;
+                  }
+                  .calnum:hover {
+                    font-weight: 800;
+                   text-decoration: none;
+                    }
+                    .calnum:focus {
+                      font-weight: 800;
+                      text-decoration: none;
+                       }
+                       .calnum:active {
+                        color: #330811;
+                        border: 1px solid #330811;
+                        text-decoration: none;
+                         }
               .calmain {
                color: #330811;
                padding: 1.3rem;
@@ -719,10 +739,7 @@ font-weight: 600;}
               height: 35%;
               background-image: url(assets/bg-24.png);
               background-size: cover;}
-              .aheade {
-                color: #330811;
-                max-width: 40rem;
-              background-color: #ffffff;}
+             
               .day{
                 color: #ffffff;
                 font-size: 1.6rem;
@@ -845,14 +862,19 @@ font-weight: 600;}
                       .work li:before {
                         padding: 0.5rem 1rem;
                       }
+                      /* calenar page */
                         .calendarpage {
                           grid-template-columns: repeat(4, 1fr);
                           }
                          .calmain {
                           padding: 1.5rem 2.5rem;
                           margin-top: 5rem;}  
+                        
+                         .num {
+                          margin-top: -3rem;
+                          margin-left: 2rem;
                          }
-            
+                        }
       
             @media (min-width: 900px) {
               body{
@@ -914,13 +936,7 @@ font-weight: 600;}
             padding: 2rem;
             max-width: 90rem;
           }
-          .aheade {
-            color: #330811;
-            max-width: 38rem;
-            background-color: #ffffff;
-            margin: 0 auto;
-            margin-bottom: 2rem;
-          }
+        
             .aheaderc {
               display: flex;
               flex-direction: row;
@@ -996,7 +1012,7 @@ font-weight: 600;}
               max-width: 46rem;
             }
             .bac {
-              margin-left: 8.2rem;
+              /*! margin-left: 8.2rem; */
               margin-bottom: 1rem;
             }
             .diff {
@@ -1074,6 +1090,7 @@ font-weight: 600;}
                    .calmain {
                              margin-left: -6.6rem;
                               margin-top: 8rem;} 
+
                   /*homepage */
                   .abouth1 {
                     font-size: 2.5rem;
@@ -1148,6 +1165,12 @@ font-weight: 600;}
                 }
                 .thirdpara {
                   max-width: 41rem;
+                }
+                .aheade {
+                  color: #330811;
+                  max-width: 38rem;
+                  margin: 0 auto;
+                  margin-bottom: 1rem;
                 }
                 
 
