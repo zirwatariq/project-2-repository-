@@ -247,7 +247,7 @@
   .bulb {
     width: 10%;
   }
-  /* music icon with options*/
+  /* music icon with options
   .navbar li{
     width: 10%;
   }
@@ -281,17 +281,50 @@
     font-size: 1.3rem;
     color: #3a2333;
   }
-  .play-pause-button {
-    width: 20px;
-    height: 20px;
-    background-image: url('assets/music-14.png'); /* Replace with your play icon */
-    background-size: cover;
-  }
-  
-  .play-pause-button.play {
-    background-image: url('assets/music-24.png'); /* Replace with your pause icon */
-  }
 
+*/
+.playmusic {
+  width: 50%;
+}
+/*this sets the width to items in row
+.navbar li{
+  width: 10%;
+} */
+/*this is for the icons to set in row */
+.navbar ul {
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   cursor: pointer;
+   gap: 2rem;
+   justify-content: flex-end;
+   padding: 0.4rem;
+ 
+}
+
+.navbar ul li ul {
+  position:absolute;
+  width: 172px;
+  background-color: #f9f7f3;
+  display: none;
+}
+
+.navbar ul li ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.navbar ul li ul li a {
+  padding: 0.5rem;
+}
+.navbar ul li:focus-within > ul {
+
+  display: initial;
+}
+.navbar ul li:hover > ul{
+  display: initial;
+
+}
    /* breadcrumbs */
 nav.breadcrumb {
     padding: 0.2rem 1rem;
@@ -869,7 +902,7 @@ font-weight: 600;}
                        }
                        .aheaderc p{
                         max-width: 40rem;
-                        margin: 0 auto;
+                        margin: 1rem auto;
                         padding: 1rem;
                        }
                        .title {
