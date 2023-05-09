@@ -243,11 +243,7 @@
     align-items: center;
     display: inline-block;
   }
-  .audio {
-    width: 50%;
-    height: auto;
-    margin-bottom: 20px;
-  }
+
   .bulb {
     width: 10%;
   }
@@ -264,6 +260,7 @@
      gap: 2rem;
      padding: 0.4rem;
      margin-right: 1rem;
+     margin-bottom: -1rem;
   }
   .navbar ul li ul {
     position:absolute;
@@ -284,11 +281,16 @@
     font-size: 1.3rem;
     color: #3a2333;
   }
-  .navbar ul li:focus-within > ul {
-    display: initial;
+  .play-pause-button {
+    width: 20px;
+    height: 20px;
+    background-image: url('assets/music-14.png'); /* Replace with your play icon */
+    background-size: cover;
   }
-  .navbar ul li:hover > ul{
-    display: initial;}
+  
+  .play-pause-button.play {
+    background-image: url('assets/music-24.png'); /* Replace with your pause icon */
+  }
 
    /* breadcrumbs */
 nav.breadcrumb {
@@ -299,7 +301,7 @@ nav.breadcrumb ol {
     margin: 0;
     padding-left: 0;
     list-style: none;
-    margin-bottom: 1rem;
+    /*! margin-bottom: 1rem; */
 }
   
 nav.breadcrumb li {
@@ -328,7 +330,9 @@ h1{
     color: #58304B;
     line-height: 1.1em;
     font-size: 1.9rem;
-    font-weight: 700;}
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
     .abouth1{
     font-family: 'Roboto', Helvetica, sans-serif;
     color: #58304B;
@@ -557,7 +561,7 @@ font-weight: 600;}
              }
             label {
                 display: block;
-                margin-bottom: 10px;}
+                margin-bottom: 9px;}
               
               input[type="text"] {
                 padding: 10px;
@@ -686,7 +690,7 @@ font-weight: 600;}
               display: block;
               float: left;
               width: 25%;
-              padding: 1.5rem;
+              padding: 1rem;
             }
             .header {
               max-width: 57rem;
@@ -968,12 +972,10 @@ font-weight: 600;}
             .header .logo {
               display: block;
               float: left;
-              padding: 2rem;
               width: 45%;
           }
           .icon {
             width: 100%;
-            margin-top: 10rem; 
             margin-left: -2rem;
           }
          
@@ -1026,6 +1028,7 @@ font-weight: 600;}
               margin-top: 3rem;
               color: #330811;
               margin-left: 19rem;
+              text-align: left;
 }
               
             .work li{
@@ -1044,7 +1047,7 @@ font-weight: 600;}
             margin-top: -2rem;
 }*/
           .inputt {
-            margin-top: -16rem;
+            margin-top: -18rem;
             display: flex;
             flex-direction: column;
             max-width: 18rem;

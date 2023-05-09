@@ -30,19 +30,25 @@
       <ul>
         <li><a href="calendar.html"><img src="assets/images-06.png" class="icon" alt="purple color calendar icon" ></a></li>
         <li><img src="assets/images-05.png" class="icon" alt="purple color music add icon">
-        <ul>
-            <li><a href="">Calm <img src="assets/music-14.png" id="iconn" alt="purple color music play icon"></a></li>
+            <ul class="submenu">
+                <li><a href="assets/calm.mp3">Calm <button class="play-pause-button" onclick="playPause(this)"></button></a></li>
+                <li><a href="#">Calm <button class="play-pause-button" onclick="playPause(this)"></button></a></li>
+    </ul>
+    <button class="close-button" onclick="closeSubmenu(this)">Close</button>
+        </li>
+      </ul>
+    </nav>
+  
+
             <!--
             <li><a href="">Hip Hop <img src="assets/music-14.png" class="playmusic" alt="purple color music play icon"></a></li>  
-            <li><a href="">Jazz <img src="assets/music-14.png" class="playmusic" alt="purple color music play icon"></a></li>-->
+            <li><a href="">Jazz <img src="assets/music-14.png" class="playmusic" alt="purple color music play icon"></a></li>
             <audio id="mySong">
               <source src="assets/calm.mp3" type="audio/mp3">
              
             </audio>
-          </ul>
-  </li>
-      </ul>
-      </nav> 
+          </ul> -->
+   
       <nav aria-label="Breadcrumb" class="breadcrumb">
         <ol>
           <li><a href="calendar.html"></a>Calendar</li>
@@ -107,6 +113,7 @@
 <p>	Copyrights &copy;2023 Design and developed by Zirwa Tariq - All rights reserved. </p>
 </footer>
 <script src="drawer.js"></script>
+<script src="drawere.js"></script>
 <script src="drawerr.js"></script>
 </body>
 </html>
