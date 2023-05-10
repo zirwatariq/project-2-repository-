@@ -194,7 +194,7 @@
   box-shadow:none;
 
 }
-/* about page button */
+/* about page and main page button */
 .nextpage1 {
   background: linear-gradient(to right, #EDC242, #D8AC27);
   box-shadow:0px 2px 5px #000;
@@ -232,75 +232,66 @@
   box-shadow:none;
 
 }
-
    /* calendar and music icon */
-.icon {
-  margin-top: 6rem;
-  width: 100%;
-  }
+
   #iconn {
     width: 15%;
     align-items: center;
     display: inline-block;
   }
-
   .bulb {
     width: 10%;
   }
+ 
   /* music icon with options
-  .navbar li{
-    width: 10%;
-  }
-  .navbar ul {
-     list-style: none;
-     display: flex;
-     flex-direction: row;
-     justify-content: flex-end;
-     cursor: pointer;
-     gap: 2rem;
-     padding: 0.4rem;
-     margin-right: 1rem;
-     margin-bottom: -1rem;
-  }
-  .navbar ul li ul {
-    position:absolute;
-    width: 166px;
-    display: none;
-    box-shadow: 3px 3px 10px #0f0e0e;
-    background-color: #ffffff;
-    border-radius: 5px;
-    padding: 1rem;
-  }
-  .navbar ul li ul li {
-    width: 100%;
-    border-bottom: 0.1px solid var(--purpleColor);
-  }
-  .navbar ul li ul li a {
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: #3a2333;
-  }
+  
 
-*/
-.playmusic {
-  width: 50%;
+/* drop down menu */
+
+  /* Add your styles for the main navigation */
+  .icon {
+    margin-top: 6rem;
+    width: 100%;
+    }
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-/*this sets the width to items in row
+
 .navbar li{
   width: 10%;
-} */
-/*this is for the icons to set in row */
-.navbar ul {
-   list-style: none;
-   display: flex;
-   flex-direction: row;
-   cursor: pointer;
-   gap: 2rem;
-   justify-content: flex-end;
-   padding: 0.4rem;
+
 }
 
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  gap: 2rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin-bottom: 5px;
+}
+.playmusic {
+  align-items: center;
+  width: 20%;
+}
 .navbar ul li ul {
   position:absolute;
   width: 172px;
@@ -312,9 +303,6 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-}
-.navbar ul li ul li a {
-  padding: 0.5rem;
 }
 .navbar ul li:focus-within > ul {
 
@@ -333,7 +321,6 @@ nav.breadcrumb ol {
     margin: 0;
     padding-left: 0;
     list-style: none;
-    /*! margin-bottom: 1rem; */
 }
   
 nav.breadcrumb li {
@@ -341,6 +328,7 @@ nav.breadcrumb li {
    }
    nav.breadcrumb li a {
     text-decoration: underline;
+    color: #000000;
    }
   
 nav.breadcrumb li + li::before {
@@ -408,6 +396,7 @@ h2{
     font-size: 1.7rem;
     font-weight: 800;
     max-width: 16rem;
+    margin: 0 auto;
 }
 .two{
   padding: 1.3rem;
@@ -563,6 +552,49 @@ font-weight: 600;}
       width: 100%;
     }
             /*homepage input */
+           #form1 {
+            display: none;
+           }
+           #form2{
+            
+            display: block;
+            margin: 0 auto;
+           }
+           input[type="text"],
+           input[type="email"] {
+               display: block;
+               margin: 0 auto;
+               width: 70%;
+               margin-bottom: 10px;
+               padding: 10px;
+               color: #330811;
+               font-size: 16px;
+               border: 2px solid #330811;
+               border-radius: 10px;
+               box-sizing: border-box;
+               margin-bottom: 10px;
+               margin-top: 1rem;
+           }
+           input[type="text"]:visited,
+           input[type="email"]:visited{
+            border: 3px solid #474747;;
+           }
+
+           input[type="text"]:hover,
+           input[type="email"]:hover {
+            border: 3px solid #EFB401;
+           }
+           input[type="text"]:focus,
+           input[type="email"]:focus {
+            border: 3px solid #EFB401;
+           }
+           input[type="text"]:active,
+           input[type="email"]:active{
+            box-shadow: 3px 2px 8px #330811;
+           }
+
+
+
             .work {
               list-style: none;
               counter-reset: item;
@@ -592,18 +624,6 @@ font-weight: 600;}
                padding: 0.5rem 0.8rem;
              }
             /* input forms
-             label {
-                display: block;
-                margin-bottom: 9px;}
-              
-             
-
-                input[type="text"]:visited {
-                  border: 3px solid #474747;}
-                input[type="text"]:active {
-                  box-shadow: 3px 2px 8px #330811;
-                }
-            
                 button {
                     background: linear-gradient(to right, #EDC242, #D8AC27);
                     border: none;
@@ -618,28 +638,8 @@ font-weight: 600;}
                     margin: 0 auto;
                     margin-bottom: 2.5rem;
                     margin-top: 1.5rem;
-                  }
-                  .secondforms{
-                    max-width: 20rem;
-                  }
-                  #input-field1, #input-field2,
-                  #input-field3, #input-field4,:link{
-                    padding: 10px;
-                    color: #330811;
-                    font-size: 16px;
-                    border: 2px solid #330811;
-                    border-radius: 10px;
-                    box-sizing: border-box;
-                    width: 70%;
-                    display: block;
-                    margin: 0 auto;
-                    margin-bottom: 10px;
-                    margin-top: 1rem;
-                  }
-                 
+                  }            
 */
-input[type="text"]{
-  border: 3px solid #474747;}
 
                   .topbox {
                     padding: 1.4rem;
@@ -713,7 +713,7 @@ input[type="text"]{
             @media (min-width: 600px) {
              body{
                  max-width: 60rem; 
-                 font-size: 1.3rem;
+                 font-size: 1.2rem;
                  margin: 0 auto; 
                  line-height: 1.6em;
             }
@@ -742,14 +742,12 @@ input[type="text"]{
               .header li a:active{
                 font-size: 1.7rem;
               }
-.header .menu-icon .navicon {
-  width: 40px;
-  height: 5px;
-}
-.header .menu-icon {
-  margin-left: 33.5rem;
-  margin-top: 1.5rem;
-}
+              .header .menu-icon .navicon {
+              width: 40px;
+              height: 5px;}
+             .header .menu-icon {
+              margin-left: 33.5rem;
+              margin-top: 1.5rem;} 
             .icon {
               width: 100%;
               margin-top: 7rem; 
@@ -759,9 +757,7 @@ input[type="text"]{
               color: #ffffff;
               background-color: #58304B;
             }
-            .topbox {
-              margin-top: 6rem;
-            }
+        
             .secondparai {
               max-width: 37rem;
               margin: 0 auto;}
@@ -822,7 +818,7 @@ input[type="text"]{
                       font-size: 2.1rem;
                       max-width: 40rem;
                       margin: 1rem auto;
-                      /*! margin-left: 11rem; */
+                  
                     }
                     .two {
                       padding: 2.3rem 3.5rem;
@@ -886,29 +882,28 @@ input[type="text"]{
                     .breadcrumb {
                         margin-left: 5.5rem;
                     }
-                    
-                       input[type="text"] {
-                        width: 40%;
-                        padding: 13px;
-                        font-size: 18px;
-                       }
-                       #input {
-                        display: flex;
-                        flex-direction: row;
-                        max-width: 40rem;
+                    /* homepage */
+                    .flex {
+                      margin-top: 2rem;}
+
+                    .topbox {
+                      margin-top: 6rem;
+                    }
+                    .title {
+                      max-width: 32rem;
+                      margin: 0 auto;
+                     }
+                       .aheaderc p{
+                        max-width: 32rem;
                         margin: 2rem auto;
                        }
-                       .aheaderc p{
-                        max-width: 40rem;
-                        margin: 1rem auto;
-                        padding: 1rem;
+                       input[type="text"],
+                       input[type="email"] {
+                           width: 30%;
+                           padding: 13px;
+                           
                        }
-                       .title {
-                        max-width: 40rem;
-                        margin: 0 auto;
-                        padding: 1rem;
-                        font-size: 2.4rem;
-                       }
+
                        .social li{
                         width: 5%;
                       }
@@ -1040,6 +1035,8 @@ input[type="text"]{
                 figure img{
                  width: 32%;
                  /*! padding: 2rem; */
+                 align-self: center;
+                 margin-top: 3rem;
                 }
                 .social li {
                   width: 3%;
@@ -1048,7 +1045,6 @@ input[type="text"]{
               max-width: 46rem;
             }
             .bac {
-              /*! margin-left: 8.2rem; */
               margin-bottom: 1rem;
             }
             .diff {
@@ -1069,26 +1065,7 @@ input[type="text"]{
             border: 6px solid #FF8100;
             font-size: 2.7rem;
             padding: 1.5rem 1.8rem;}
-          
-    /*
-          label {
-            max-width: 16rem;           
-            align-content: center;
-            margin-left: 58rem;
-            margin-top: -2rem;
-}
-          .inputt {
-            margin-top: -18rem;
-            display: flex;
-            flex-direction: column;
-            max-width: 18rem;
-            margin-left: 57.5rem;
-          }*/
-          #input {
-            display: flex;
-            flex-direction: row;
-            max-width: 40rem;
-            margin: 2rem auto;}
+
           .flexx {
             display: flex;
             flex-direction: column;
@@ -1099,13 +1076,7 @@ input[type="text"]{
             .nextpage {
               margin-right: 12rem;}
 
-          input[type="textt"] {
-            padding: 18px;
-            font-size: 16px;
-            border: 2px solid #330811;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            margin-top: 1rem;}
+      
             .navbar li {
               width: 3.5%;
             }
@@ -1140,22 +1111,32 @@ input[type="text"]{
                     font-size: 2.5rem;
                     margin-top: 7rem;
                     margin-left: 22.4rem;}
-              .indexh{
-              color: #441E37;
-              text-align: center;
-              margin-top: 2rem;
-              margin-left: -4rem;
+                   .indexh{
+                   color: #441E37;
+                   text-align: center;
+                   margin-top: 2rem;
+                   margin-left: -4rem;
               }
-              /* input forms */
-              #form1{
-                max-width: 20rem;
-                display: flex;
-                flex-direction: row;
-               }
-             
-                input[type="text"] {
-                  padding: 15px;}
-    
+                   /* input forms */
+                   #form1{
+                    max-width: 20rem;
+                    display: block;
+                   } 
+                   #form2{
+                    max-width: 40rem;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+                   } 
+                   input[type="text"],
+                   input[type="email"] {
+                       width: 100%;
+                       padding: 15px;
+                       
+                   }
+                   .firstforms{
+                    max-width: 30rem;
+                   }
                   #my-button {
                     font-size: 2rem;
                     padding: 0.8rem 3rem;}
@@ -1194,9 +1175,7 @@ input[type="text"]{
                   padding: 1.5rem 0rem;
                   position: relative;
                   color: #FFF;
-                  max-width: 34rem;
-                  /*! overflow: hidden; */
-                  
+                  max-width: 34rem;  
                 }
                 /* this sets the circle in bg */
                 .two ::after {
@@ -1216,6 +1195,7 @@ input[type="text"]{
                 }
                 .thirdpara {
                   max-width: 41rem;
+                  margin-left: 4rem;
                 }
                 #thirdparai{
                   background-color: #F4F4F4;
