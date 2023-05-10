@@ -248,7 +248,7 @@
 
 /* drop down menu */
 
-  /* Add your styles for the main navigation */
+
   .icon {
     margin-top: 6rem;
     width: 100%;
@@ -264,7 +264,7 @@
   width: 10%;
 
 }
-
+  /* Add your styles for the main navigation 
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -311,7 +311,7 @@
 .navbar ul li:hover > ul{
   display: initial;
 
-}
+}*/
    /* breadcrumbs */
 nav.breadcrumb {
     padding: 0.2rem 1rem;
@@ -467,7 +467,7 @@ font-weight: 600;}
 }
 
 .thirdparai{
-  background-color: #F4F4F4;   
+  background-color: #c1bebe;   
   padding: 1rem;  
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -592,8 +592,6 @@ font-weight: 600;}
            input[type="email"]:active{
             box-shadow: 3px 2px 8px #330811;
            }
-
-
 
             .work {
               list-style: none;
@@ -1198,16 +1196,13 @@ font-weight: 600;}
                   margin-left: 4rem;
                 }
                 .thirdparai{
-                  background-color: #F4F4F4;
+                  background-color: #dbd9d9;
                   max-width: 88rem;
                   display: grid;
                   grid-template-rows: 1fr 1fr;
-                 
+          
+                }
                 
-                }
-                .inp {
-                  max-width: 40rem;
-                }
                 .aheade {
                   color: #330811;
                   max-width: 38rem;
