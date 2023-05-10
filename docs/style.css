@@ -248,7 +248,7 @@
 
 /* drop down menu */
 
-
+  /* Add your styles for the main navigation */
   .icon {
     margin-top: 6rem;
     width: 100%;
@@ -264,7 +264,7 @@
   width: 10%;
 
 }
-  /* Add your styles for the main navigation 
+
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -311,7 +311,7 @@
 .navbar ul li:hover > ul{
   display: initial;
 
-}*/
+}
    /* breadcrumbs */
 nav.breadcrumb {
     padding: 0.2rem 1rem;
@@ -467,7 +467,7 @@ font-weight: 600;}
 }
 
 .thirdparai{
-  background-color: #c1bebe;   
+  background-color: #F4F4F4;   
   padding: 1rem;  
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -593,11 +593,13 @@ font-weight: 600;}
             box-shadow: 3px 2px 8px #330811;
            }
 
+
+
             .work {
               list-style: none;
               counter-reset: item;
               width: 100%;
-              padding: 1rem 0.5rem;
+              padding: 1rem 0.7rem;
               margin-top: 1rem;
             }
             .work li {
@@ -606,7 +608,7 @@ font-weight: 600;}
               display: flex;
               justify-content: start;
               align-items: start;
-              gap: 1.2rem;
+              gap: 1rem;
               
             }
             .work li:before {
@@ -1045,6 +1047,15 @@ font-weight: 600;}
             .bac {
               margin-bottom: 1rem;
             }
+            .topbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.title{
+max-width: 31rem;
+font-size: 2.7rem;}
             .diff {
               
               max-width: 16rem;
@@ -1069,10 +1080,9 @@ font-weight: 600;}
             flex-direction: column;
           }
           .flex {
-            margin-left: -31rem;
+            margin-left: -1rem;
             margin-top: 3rem;}
-            .nextpage {
-              margin-right: 12rem;}
+          
 
       
             .navbar li {
@@ -1134,6 +1144,7 @@ font-weight: 600;}
                    }
                    .firstforms{
                     max-width: 30rem;
+                    margin-left: 4rem;
                    }
                   #my-button {
                     font-size: 2rem;
@@ -1196,13 +1207,15 @@ font-weight: 600;}
                   margin-left: 4rem;
                 }
                 .thirdparai{
-                  background-color: #dbd9d9;
+                  background-color: #F4F4F4;
                   max-width: 88rem;
                   display: grid;
                   grid-template-rows: 1fr 1fr;
-          
-                }
                 
+                }
+                .inp {
+                  max-width: 40rem;
+                }
                 .aheade {
                   color: #330811;
                   max-width: 38rem;
