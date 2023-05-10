@@ -466,7 +466,7 @@ font-weight: 600;}
   margin-top: 1.5rem;
 }
 
-#thirdparai{
+.thirdparai{
   background-color: #F4F4F4;   
   padding: 1rem;  
   margin-top: 1rem;
@@ -599,7 +599,7 @@ font-weight: 600;}
               list-style: none;
               counter-reset: item;
               width: 100%;
-              padding: 0.3rem;
+              padding: 1rem 0.5rem;
               margin-top: 1rem;
             }
             .work li {
@@ -1197,7 +1197,7 @@ font-weight: 600;}
                   max-width: 41rem;
                   margin-left: 4rem;
                 }
-                #thirdparai{
+                .thirdparai{
                   background-color: #F4F4F4;
                   max-width: 88rem;
                   display: grid;

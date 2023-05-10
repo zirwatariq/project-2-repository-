@@ -599,7 +599,7 @@ font-weight: 600;}
               list-style: none;
               counter-reset: item;
               width: 100%;
-              padding: 0.3rem;
+              padding: 1rem 0.7rem;
               margin-top: 1rem;
             }
             .work li {
@@ -608,7 +608,7 @@ font-weight: 600;}
               display: flex;
               justify-content: start;
               align-items: start;
-              gap: 1.2rem;
+              gap: 1rem;
               
             }
             .work li:before {
