@@ -556,6 +556,14 @@ font-weight: 600;}
               visibility: hidden;;
             }
             label[for="email1"] {
+              position: absolute;
+              left: -9999px;
+              visibility: hidden;;
+            }
+            label[for="name2"] {
+              visibility: hidden;;
+            }
+            label[for="email2"] {
               visibility: hidden;;
             }
            #form1 {
