@@ -552,6 +552,12 @@ font-weight: 600;}
       width: 100%;
     }
             /*homepage input */
+            label[for="name1"] {
+              visibility: hidden;;
+            }
+            label[for="email1"] {
+              visibility: hidden;;
+            }
            #form1 {
             display: none;
            }
