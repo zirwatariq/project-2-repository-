@@ -17,12 +17,20 @@
     <a id="skip" href="#mainPage"> Skip to main </a>
     <header class="header">
       <a href="index.html"><img src="assets/images-08.png" class="logo" alt="play your way to creativity text written with creativity word written in bold"></a>
-      <input class="menu-btn" type="checkbox" id="menu-btn">
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-  </ul>
+
+  <div class="logs">
+    <button onclick="openNav()"><img src="assets/menu.png" class="menubt" alt="hamburgermenu"></button>
+
+    <nav class="drawer" id="theDrawer">
+            <!-- the aria-label helps screen reader users understand the purpose of the button because of the unclear text "x". 
+                When the botton gains keyboard focus it opens the navigation so that the keyboard focus can be visible. assets/WEBlogoF.png -->
+            <button aria-label="Close" class="closeBtn" onfocus="openNav()" onclick="closeNav()">&times;</button>
+        <ul class="bar">
+          <li><a href="index.html"  onfocus="openNav()"> Home</a></li>
+          <li><a href="about.html" onfocus="openNav()" onblur="closeNav()"> About</a></li>
+        </ul>
+    </nav> 
+</div>
   </header>
 <main id="mainPage">
   <article>
@@ -95,5 +103,6 @@
 </footer>
 <script src="drawer.js"></script>
 <script src="drawerr.js"></script>
+<script src="drawere.js"></script>
 </body>
 </html>

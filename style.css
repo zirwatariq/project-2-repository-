@@ -7,7 +7,7 @@
     --mainColor: #000000;
     --purpleColor: #59314C;
     --lightPurple: #58304B;
-    --yellowColor: #FFCF3F;
+    --yellowColor: #f9c62f;
     --orangeColor: #FF8100;
     --pinkColor:   #F5ADB3;
   }
@@ -55,8 +55,29 @@
     border-right: 1px solid #f4f4f4;
     color: #ffffff;
     text-align: center;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 1.5rem;
+  }
+  .header li a:link {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+  .header li a:visited {
+    color: #ffffff;
+    text-decoration:none;
+  }
+  .header li a:hover {
+    color: #f9c62f;
+    text-decoration:none;
+  }
+  .header li a:focus{
+    color: #f9c62f;
+    text-decoration:none;
+  }
+  .header li a:active{
+    color: #f9c62f;
+    text-decoration:none;
+   text-transform: uppercase;
   }
 
   .header .logo {
@@ -70,96 +91,63 @@
   max-height: 0;
   transition:  .2s ease-out;
 }
-/* menu icon */
+/* menu icon 
 
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  user-select: none;
-  padding: 28px 20px;
-  margin-left: 5.6rem;
-  margin-top: 0.5rem;
+  /* hamburger */
+  /* hamburger menu */
+  .menubt {
+    border:none;
+    /* brings to the front */
+    z-index: 1005;
+    display: inline-block; 
+    cursor: pointer; 
+    width: 2rem;
+    margin-left: 6.5rem;
+    margin-top: 2rem;
+
 }
-
-.header .menu-icon .navicon {
-  background: #59314C;
-  display: block;
-  height: 4px;
-  position: relative;
-  transition: .2s ease-out;
-  width: 25px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: #59314C;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 7px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -7px;
-}
-/* menu btn */
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 700px;
-  height: 500px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
+button {
   background: transparent;
+  border: none;}
+/* DRAWER NAVIGATION */
+    
+.drawer {
+/* 100% Full-height */
+height: 200vh;
+/* 0 width - change this with JavaScript */
+width: 250px;
+max-width: 100%;
+/* Stay in place */
+position: fixed;
+/* Stay in front */
+z-index: 1006;
+/* Stay at the top of browser window */
+top: 0;
+/* stay at right side of browser window */
+right: -250px;
+background-color: var(--greenColord);
+/* Disable horizontal scroll */
+overflow-x: hidden;
+padding-top: 3.5rem;
 }
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
+.drawer button {
+border: 0;
+background: none;
 }
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
+.drawer .closeBtn {
+/* Position and style the close button (top right corner of drawer) */
+ position: absolute;
+ top: 3rem;
+ color: #fff;
+ font-size: 1.8rem;
+ padding: 1rem;
+ margin-left: 13rem;
+ cursor: pointer;
 }
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-    /* navigation styling */
-  .header li a:link{
-    text-decoration: underline;
-  }
-  .header li a:visited{
-    text-decoration: none;
-  }
-  .header li a:hover{
-            color: #EDC242;
-            font-size: 1.5rem;
-            text-decoration: underline 2px #EDC242;
-  }
-  .header li a:focus{
-            color: #EDC242;
-            font-size: 1.5rem;
-            text-decoration: underline 2px #EDC242;
-  }
-  .header li a:active{
-    text-decoration: underline 3px #FF8100;
-  }
   /*top button*/
 .nextpage {
   background: linear-gradient(to right, #EDC242, #D8AC27);
-  box-shadow:0px 3px 8px #000;
+  box-shadow:0px 3px 4px #000;
   border: none;
   color: #330811;
   padding: 10px 0px;
@@ -243,9 +231,6 @@
     width: 10%;
   }
  
-  /* music icon with options
-  
-
 /* drop down menu */
 
   /* Add your styles for the main navigation */
@@ -587,7 +572,7 @@ font-weight: 600;}
                border-radius: 10px;
                box-sizing: border-box;
                margin-bottom: 10px;
-               margin-top: 1rem;
+               margin-top: -1rem;
            }
            input[type="text"]:visited,
            input[type="email"]:visited{
@@ -876,8 +861,8 @@ font-weight: 600;}
                       padding: 12px 0;
                      }
                      button {
-                      font-size: 1.6rem;
-                      margin-top: 1.3rem;
+                      font-size: 1.8rem;
+                      margin-left: 30rem;
                      }
                      #backtop {
                       width: 8%;
@@ -996,7 +981,27 @@ font-weight: 600;}
             .header li a {
               color: #330811;
               border-right: none;
-              text-decoration: underline 1px #fff;
+              text-decoration: none;
+            }
+            .header li a:link {
+              color: #330811;
+              border-right: none;
+              text-decoration: none;
+            }
+            .header li a:visited{
+              color: #330811;
+              border-right: none;
+              text-decoration: none;
+            }
+            .header li a:hover{
+              color:#e2ab05 ;
+              text-decoration: underline 1px #e2ab05 ;
+              border-right: none;
+            }
+            .header li a:focus{
+              color:#e2ab05  ;
+              text-decoration: underline 1px #e2ab05 ;
+              border-right: none;
             }
             .header .menu {
               clear: none;
@@ -1006,14 +1011,43 @@ font-weight: 600;}
               justify-content: flex-end;
               justify-items: center;
             }
+            /*
             .header .menu-icon {
               display: none;
-            }
+            }*/
+            button.closeBtn {
+              display: none;
+          } 
+          .logs button {
+              display: none;
+                
+          }
+          nav ul{
+              margin-left: 25rem;
+              
+          }
+          .social ul {
+            margin-left: 1rem;
+          }
+          .bar {
+              display:flex;  
+              max-width: 25rem;
+          }
+    .drawer {
+              height: auto;
+             margin-right: 15rem;
+              margin-top: -3rem;
+              }
             .header .logo {
               display: block;
               float: left;
               width: 45%;
           }
+          .header ul{
+            background-color: #fff;
+          }
+          
+
           .icon {
             width: 100%;
             margin-left: -2rem;
@@ -1096,9 +1130,6 @@ font-size: 2.7rem;}
           .flex {
             margin-left: -1rem;
             margin-top: 3rem;}
-          
-
-      
             .navbar li {
               width: 3.5%;
             }
@@ -1154,6 +1185,14 @@ font-size: 2.7rem;}
                    input[type="email"] {
                        width: 100%;
                        padding: 15px;
+                       margin-top: 1rem;
+                       
+                   }
+                   input[type="text"],
+                   input[type="email"] {
+                       width: 100%;
+                       padding: 15px;
+                       margin-top: 1rem;
                        
                    }
                    .firstforms{
@@ -1236,6 +1275,7 @@ font-size: 2.7rem;}
                   margin: 0 auto;
                   margin-bottom: 1rem;
                 }
+               
                    /* about page */
                    .oneabout {
                     max-width: 50rem;
