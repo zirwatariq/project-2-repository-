@@ -441,6 +441,42 @@ background-size: cover;}
         .figlink {
           color: #757575;
         }
+        .figlink:visited{
+          color: #3e3e3e;
+        }
+        .figlink:hover {
+          text-transform: capitalize;
+          text-decoration: none;
+        }
+        .figlink:focus {
+          text-transform: capitalize;
+          text-decoration: none;
+        }
+        .figlink:active{
+          color: #2e2d2d;
+          text-decoration: underline;
+        }
+        .copylink {
+          color: #F4F4F4;
+          text-decoration: underline;
+        }
+        .copylink:link {
+          color: #F4F4F4;
+        }
+        .copylink:visited{
+          color: #F4F4F4;
+        }
+        .copylink:hover{
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+        .copylink:focus{
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+        .copylink:active{
+          color: #ffffff;
+        }
 
 /* heading 3 and section */
 h3{
@@ -912,8 +948,10 @@ font-weight: 600;}
                           margin-top: 5rem;}  
                         
                          .num {
-                          margin-top: -3rem;
+                          margin-top: -4rem;
                           margin-left: 2rem;
+                          max-width: 3rem;
+                          line-height: 1.3em;
                          }
                          /* about page */
                          .oneabout {
@@ -1148,8 +1186,10 @@ font-size: 2.7rem;}
                     margin-bottom: 2rem;
                   }
                   .num {
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                     margin-left: 2rem;
+                    /*! margin-bottom: -3rem; */
+                    margin-top: -7rem;
                    }
                    .calmain {
                              margin-left: -6.6rem;
