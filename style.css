@@ -39,6 +39,7 @@
     border-bottom:  2px solid var(--orangeColor);
     position: fixed;
     width: 100%;
+   
     z-index: 3;
   }
   .header ul {
@@ -261,9 +262,9 @@ background: none;
   display: flex;
   flex-direction: row;
   cursor: pointer;
-  gap: 2rem;
+  padding: 0.5rem;
   justify-content: flex-end;
-  margin-top: 1rem;
+
 }
 
 .dropdown:hover .dropdown-menu {
@@ -434,8 +435,12 @@ background-size: cover;}
       
     figcaption {
         font-size: 16px;
-        color: #330811;
+        line-height: 1.3rem;
+        color: #757575;
         text-align: center;}
+        .figlink {
+          color: #757575;
+        }
 
 /* heading 3 and section */
 h3{
@@ -606,7 +611,7 @@ font-weight: 600;}
               margin-bottom: 1rem;
               display: flex;
               justify-content: start;
-              align-items: start;
+              align-items: center;
               gap: 1rem;
               
             }
@@ -622,24 +627,6 @@ font-weight: 600;}
                display: inline-block;
                padding: 0.5rem 0.8rem;
              }
-            /* input forms
-                button {
-                    background: linear-gradient(to right, #EDC242, #D8AC27);
-                    border: none;
-                    box-shadow: 3px 3px 10px rgb(0, 0, 0);
-                    color: #330811;
-                    padding: 10px 20px;
-                    font-size: 1.2rem;
-                    font-weight: 800;
-                    border-radius: 20px;
-                    cursor: pointer;
-                    display: block;
-                    margin: 0 auto;
-                    margin-bottom: 2.5rem;
-                    margin-top: 1.5rem;
-                  }            
-*/
-
                   .topbox {
                     padding: 1.4rem;
                     margin-top: 5rem;
@@ -712,7 +699,7 @@ font-weight: 600;}
             @media (min-width: 600px) {
              body{
                  max-width: 60rem; 
-                 font-size: 1.2rem;
+                 font-size: 1.1rem;
                  margin: 0 auto; 
                  line-height: 1.6em;
             }
@@ -724,7 +711,9 @@ font-weight: 600;}
             }
             .header {
               max-width: 57rem;
-              margin: 0 auto;}
+              margin: 0 auto;
+              /*! margin-top: -1rem; */
+            }
 
               .header li a:link{
                 font-size: 1.7rem;
@@ -803,11 +792,10 @@ font-weight: 600;}
                 
               figcaption {
                   font-size: 16px;
-                  color: #330811;
                   text-align: center;
                   max-width: 20rem;
                   margin: 0 auto;
-                  line-height: 1.5rem;}
+                  line-height: 1.3rem;}
                   .bulb {
                     width: 11%;
                   }
@@ -893,7 +881,7 @@ font-weight: 600;}
                       margin: 0 auto;
                      }
                        .aheaderc p{
-                        max-width: 32rem;
+                        max-width: 33rem;
                         margin: 2rem auto;
                        }
                        input[type="text"],
@@ -902,6 +890,9 @@ font-weight: 600;}
                            padding: 13px;
                            
                        }
+                       .menubt {
+                        margin-left: 5.5rem;}
+                      
 
                        .social li{
                         width: 5%;
@@ -952,7 +943,7 @@ font-weight: 600;}
             @media (min-width: 900px) {
               body{
                 max-width: 100rem; 
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                   margin: 0 auto; 
                   line-height: 1.6em;
            }
@@ -964,6 +955,7 @@ font-weight: 600;}
             align-items: center;
             justify-content: space-between;
             padding: 0 3rem;
+            margin-top: -1rem;
          }
         
          .work {
@@ -1042,6 +1034,8 @@ font-weight: 600;}
               display: block;
               float: left;
               width: 45%;
+              /*! padding: 1rem; */
+              margin-top: 1rem;
           }
           .header ul{
             background-color: #fff;
@@ -1094,6 +1088,8 @@ font-weight: 600;}
             }
             .bac {
               margin-bottom: 1rem;
+              margin-top: 1rem;
+              margin-left: 8rem;
             }
             .topbox {
   display: flex;
@@ -1200,8 +1196,8 @@ font-size: 2.7rem;}
                     margin-left: 4rem;
                    }
                   #my-button {
-                    font-size: 2rem;
-                    padding: 0.8rem 3rem;}
+                    font-size: 1.8rem;
+                    padding: 0.6rem 2rem;}
                    
                 
                  .wide {
@@ -1243,11 +1239,11 @@ font-size: 2.7rem;}
                 .two ::after {
                 content: "";
                 position: absolute;
-                bottom: -5rem;
-                left: 37.5rem;
-                width: 34%;
-                height: 20%;
-                transform: translate(-50%, -50%) rotate(270deg);
+                bottom: -8rem;
+                left: 37rem;
+                width: 32%;
+                height: 16%;
+                transform: translate(-40%, -50%) rotate(270deg);
                 background-image: url(assets/bg-25.png);
                 background-size: cover;
                 overflow: hidden;
