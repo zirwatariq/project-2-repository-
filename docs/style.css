@@ -357,7 +357,7 @@ h1{
     font-size: 1.5rem;
     font-weight: 600;}
     p{
-    margin-top: 0.5rem;}
+    margin-top: 1rem;}
     .one{
       padding: 0.1rem 1.3rem;
       position: relative;
@@ -456,26 +456,36 @@ background-size: cover;}
           color: #2e2d2d;
           text-decoration: underline;
         }
+        #cite1 {
+          margin-left: 1rem;
+        }
+        a {
+          color: black;
+          font-variation-settings: "wght" 500;}
         .copylink {
-          color: #F4F4F4;
+          color: #000000;
+          font-style: normal;
           text-decoration: underline;
+          
         }
         .copylink:link {
-          color: #F4F4F4;
+          color: #000000;
         }
         .copylink:visited{
-          color: #F4F4F4;
+          color: #000000;
         }
         .copylink:hover{
-          text-transform: uppercase;
+         color: #4b213d;
+          font-style: italic;
           text-decoration: none;
         }
         .copylink:focus{
-          text-transform: uppercase;
+          color: #4b213d;
+          font-style: italic;
           text-decoration: none;
         }
         .copylink:active{
-          color: #ffffff;
+          color: #000000;
         }
 
 /* heading 3 and section */
@@ -512,7 +522,7 @@ font-weight: 600;}
         margin: 0 auto;
         text-align: center;
         text-decoration: none;
-        border-radius: 35px;
+        border-radius: 11px;
         display: block;
         font-size: 1.3rem;
         font-weight: 700;
@@ -751,6 +761,7 @@ font-weight: 600;}
               /*! margin-top: -1rem; */
             }
 
+
               .header li a:link{
                 font-size: 1.7rem;
               }
@@ -781,6 +792,11 @@ font-weight: 600;}
               color: #ffffff;
               background-color: #58304B;
             }
+            #cite1 {
+              margin-left: 4rem;
+            }
+            a {
+              color: #fff;}
         
             .secondparai {
               max-width: 37rem;
@@ -995,7 +1011,12 @@ font-weight: 600;}
             padding: 0 3rem;
             margin-top: -1rem;
          }
-        
+         #cite1 {
+          margin-left: 8rem;
+        }
+        a {
+          color: #000000;}
+      
          .work {
           max-width: 40rem;
         margin-top: -12rem;
@@ -1041,10 +1062,6 @@ font-weight: 600;}
               justify-content: flex-end;
               justify-items: center;
             }
-            /*
-            .header .menu-icon {
-              display: none;
-            }*/
             button.closeBtn {
               display: none;
           } 
