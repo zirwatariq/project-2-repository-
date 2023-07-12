@@ -52,7 +52,7 @@
   
   .header li a {
     display: block;
-    padding: 20px 20px;
+    padding: 15px 20px;
     border-right: 1px solid #f4f4f4;
     color: #ffffff;
     text-align: center;
@@ -155,7 +155,7 @@ background: none;
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 9px;
   display: block;
   font-size: 1.2rem;
   font-weight: 800;
@@ -193,7 +193,7 @@ background: none;
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 9px;
   display: block;
   font-size: 1.2rem;
   font-weight: 800;
@@ -898,7 +898,7 @@ font-weight: 600;}
                      .nextpage {
                       font-size: 1.6rem;
                       max-width: 17rem;
-                      padding: 12px 0;
+                      padding: 12px 2px;
                      }
                      button {
                       font-size: 1.8rem;
@@ -1028,6 +1028,7 @@ font-weight: 600;}
           width: 5%;}
         .header li {
           background-color: #ffffff;
+          /*! font-size: 0.8rem; */
          }
             .header li a {
               color: #330811;
@@ -1083,17 +1084,18 @@ font-weight: 600;}
     .drawer {
               height: auto;
              margin-right: 15rem;
-              margin-top: -3rem;
+              margin-top: -2.5rem;
               }
             .header .logo {
               display: block;
               float: left;
-              width: 45%;
+              width: 40%;
               margin-top: 1rem;
           }
           .header ul{
             background-color: #fff;
             text-decoration: underline 2px #FF8100;
+            /*! font-size: 1.8rem; */
           }
 
           .icon {
