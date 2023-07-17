@@ -966,7 +966,7 @@ font-weight: 600;}
                          .num {
                           margin-top: -4rem;
                           margin-left: 2rem;
-                          max-width: 3rem;
+                          max-width: 9rem;
                           line-height: 1.3em;
                          }
                          /* about page */
@@ -1204,10 +1204,10 @@ font-size: 2.7rem;}
                     margin-bottom: 2rem;
                   }
                   .num {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     margin-left: 2rem;
                     /*! margin-bottom: -3rem; */
-                    margin-top: -7rem;
+                    margin-top: -4rem;
                    }
                    .calmain {
                              margin-left: -6.6rem;
