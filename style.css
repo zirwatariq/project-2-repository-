@@ -387,9 +387,8 @@ h2{
 .two{
   padding: 1.3rem;
   position: relative;
- 
-
 }
+
 /* this sets the circle in bg */
 .two ::after {
 content: "";
@@ -1003,7 +1002,7 @@ font-weight: 600;}
            }
            .header {
             max-width: 91rem;
-           border-bottom: none;
+            border-bottom: none;
             display: flex;
             flex-direction: row;
             align-items: center;
