@@ -759,22 +759,20 @@ font-weight: 600;}
               margin: 0 auto;
               /*! margin-top: -1rem; */
             }
-
-
               .header li a:link{
-                font-size: 1.7rem;
+                font-size: 1.4rem;
               }
               .header li a:visited{
-                font-size: 1.7rem;
+                font-size: 1.4rem;
               }
               .header li a:hover{
-                font-size: 1.7rem;
+                font-size: 1.4rem;
               }
               .header li a:focus{
-                font-size: 1.7rem;
+                font-size: 1.4rem;
               }
               .header li a:active{
-                font-size: 1.7rem;
+                font-size: 1.4rem;
               }
               .header .menu-icon .navicon {
               width: 40px;
@@ -997,8 +995,8 @@ font-weight: 600;}
               body{
                 max-width: 100rem; 
                 font-size: 1.2rem;
-                  margin: 0 auto; 
-                  line-height: 1.6em;
+                margin: 0 auto; 
+                line-height: 1.6em;
            }
            .header {
             max-width: 91rem;
@@ -1025,14 +1023,25 @@ font-weight: 600;}
           margin-right: 4rem;
           margin-top: -2.2rem;
           width: 5%;}
-        .header li {
-          background-color: #ffffff;
-          /*! font-size: 0.8rem; */
-         }
+    
             .header li a {
               color: #330811;
+              font-size: 1.5rem;
+            }
+            .header ul{
+              text-decoration: underline 2px #FF8100;
+              background: transparent;
+              
+            }
+            .header ul:hover {
+              color:#e2ab05 ;
+              text-decoration: underline 1px #e2ab05 ;
               border-right: none;
-              text-decoration: none;
+            }
+            .header ul:focus {
+              color:#e2ab05 ;
+              text-decoration: underline 1px #e2ab05 ;
+              border-right: none;
             }
             .header li a:link {
               color: #330811;
@@ -1044,16 +1053,7 @@ font-weight: 600;}
               border-right: none;
               text-decoration: none;
             }
-            .header li a:hover{
-              color:#e2ab05 ;
-              text-decoration: underline 1px #e2ab05 ;
-              border-right: none;
-            }
-            .header li a:focus{
-              color:#e2ab05  ;
-              text-decoration: underline 1px #e2ab05 ;
-              border-right: none;
-            }
+          
             .header .menu {
               clear: none;
               float: right;
@@ -1082,19 +1082,14 @@ font-weight: 600;}
           }
     .drawer {
               height: auto;
-             margin-right: 15rem;
+             margin-right: 17rem;
               margin-top: -2.5rem;
               }
             .header .logo {
               display: block;
               float: left;
-              width: 40%;
+              width: 35%;
               margin-top: 1rem;
-          }
-          .header ul{
-            background-color: #fff;
-            text-decoration: underline 2px #FF8100;
-            /*! font-size: 1.8rem; */
           }
 
           .icon {
