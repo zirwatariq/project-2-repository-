@@ -39,7 +39,6 @@
     border-bottom:  2px solid var(--orangeColor);
     position: fixed;
     width: 100%;
-   
     z-index: 3;
   }
   .header ul {
@@ -189,7 +188,7 @@ background: none;
   box-shadow:0px 2px 5px #000;
   border: none;
   color: #330811;
-  padding: 10px 12px;
+  padding: 10px 08px;
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
@@ -919,18 +918,17 @@ font-weight: 600;}
                         margin-left: 5.5rem;
                     }
                     /* homepage */
-                    .flex {
-                      margin-top: 2rem;}
+                
 
                     .topbox {
                       margin-top: 6rem;
                     }
                     .title {
-                      max-width: 32rem;
+                   
                       margin: 0 auto;
                      }
                        .aheaderc p{
-                        max-width: 33rem;
+                  
                         margin: 2rem auto;
                        }
                        input[type="text"],
@@ -999,13 +997,13 @@ font-weight: 600;}
                 line-height: 1.6em;
            }
            .header {
-            max-width: 91rem;
+            max-width: 100rem;
             border-bottom: none;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            padding: 0 3rem;
+            padding: 0 2rem;
             margin-top: -1rem;
          }
          #cite1 {
@@ -1013,12 +1011,12 @@ font-weight: 600;}
         }
         a {
           color: #000000;}
-      
+      /*
          .work {
           max-width: 40rem;
         margin-top: -12rem;
           margin-left: 37rem;
-}
+}*/
         .backtop {
           margin-right: 4rem;
           margin-top: -2.2rem;
@@ -1098,7 +1096,7 @@ font-weight: 600;}
              margin-top: 6rem;
              margin-bottom: -1rem;
           }
-         
+      
             .secondparai{
               color: #000000;
               margin: 0 auto;
@@ -1144,22 +1142,26 @@ font-weight: 600;}
               margin-left: 8rem;
             }
             .topbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-}
-.title{
-max-width: 31rem;
-font-size: 2.7rem;}
+              max-width: 100rem;
+              display: flex;
+              justify-content: space-between;
+               align-items: center;
+               padding: 4rem 4rem;
+              gap: 10rem;
+}          
+
+              .title{
+                  font-size: 2.7rem;}
+                
+
             .diff {
               
-              max-width: 16rem;
+              max-width: 30rem;
               font-size: 2.6rem;
-              line-height: 1.1em;
-              margin-top: 3rem;
+              /*! line-height: 1.1em; */
+              /*! margin-top: 3rem; */
               color: #330811;
-              margin-left: 19rem;
+              /*! margin-left: 19rem; */
               text-align: left;
 }
               
@@ -1176,8 +1178,9 @@ font-size: 2.7rem;}
             flex-direction: column;
           }
           .flex {
-            margin-left: -1rem;
-            margin-top: 3rem;}
+            max-width: 40rem;
+          }
+
             .navbar li {
               width: 3.5%;
             }
@@ -1309,13 +1312,14 @@ font-size: 2.7rem;}
                   max-width: 41rem;
                   margin-left: 4rem;
                 }
-                .thirdparai{
-                  background-color: #F4F4F4;
-                  max-width: 88rem;
-                  display: grid;
-                  grid-template-rows: 1fr 1fr;
-                
+                .thirdparai {
+                  display: flex;
+                  align-items: center;
+                  padding: 2rem 4rem;
+                  gap: 20rem;
                 }
+                
+              
                 .inp {
                   max-width: 40rem;
                 }
@@ -1328,11 +1332,18 @@ font-size: 2.7rem;}
                
                    /* about page */
                    .oneabout {
-                    max-width: 50rem;
-                    padding: 0.1rem 3.3rem;
+                    max-width: 100rem;
+                    padding: 0.1rem 4rem;
                     position: relative;
                     margin-top: 2rem;
                     margin: 3rem auto;
+                   }
+                   .aboutp {
+                    max-width: 50rem;
+                   }
+                   .start {
+                    text-align: left;
+                    max-width: 22rem;
                    }
                     /* this sets the circle in bg */
                     .oneabout ::after {
