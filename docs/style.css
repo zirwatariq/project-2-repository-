@@ -459,7 +459,7 @@ background-size: cover;}
         }
         a {
           color: black;
-          font-variation-settings: "wght" 500;}
+          font-variation-settings: "wght" 600;}
         .copylink {
           color: #000000;
           font-style: normal;
@@ -955,7 +955,7 @@ font-weight: 600;}
                          }
                        
                          .calmain {
-                          padding: 1.5rem 2.5rem;
+                          /*! padding: 1.5rem 2.5rem; */
                           margin-top: 5rem;}  
                         
                          .num {
@@ -1194,23 +1194,30 @@ font-weight: 600;}
               /* calender page */
               
                 .calendarpage {
-                  max-width: 50rem;
+                  max-width: 100rem;
+                  padding: 0 2rem;
                   margin: 0 auto; }
                   .calendarpage {
-                    gap: 1rem;
+                    /*! gap: 1rem; */
                     display: grid;
-                    grid-template-columns: 25% 25% 25% 25%;
-                    margin-bottom: 2rem;
+                    grid-template-columns: 24% 24% 24% 24%;
+                    /*! margin-bottom: 2rem; */
+                    /*! margin: 0 auto; */
                   }
                   .num {
-                    font-size: 1.5rem;
+                    font-size: 1.6rem;
                     margin-left: 2rem;
                     /*! margin-bottom: -3rem; */
                     margin-top: -4rem;
+                    margin-left: 4rem;
+                    font-variation-settings: "wght" 600;
                    }
                    .calmain {
-                             margin-left: -6.6rem;
-                              margin-top: 8rem;} 
+                             /*! margin-left: -6.6rem; */
+                              /*! margin-top: 8rem; */
+                             padding: 0 2rem;
+                             margin-bottom: 2rem;
+} 
 
                   /*homepage */
                   .abouth1 {
@@ -1325,9 +1332,9 @@ font-weight: 600;}
                 }
                 .aheade {
                   color: #330811;
-                  max-width: 38rem;
-                  margin: 0 auto;
-                  margin-bottom: 1rem;
+                  max-width: 50rem;
+        
+                  margin-bottom: 5rem;
                 }
                
                    /* about page */
